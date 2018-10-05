@@ -38,10 +38,10 @@ namespace TestHost2
             var principal = client.GetGrain<MergeInterface.IMergeSort>(Guid.NewGuid());
             var resultado = ReadFileYeah(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "oraciones.txt")).ToList();
 
-            //Calculo básico de distribución
-            var identificadores = distribucion(1, client, resultado);
+            //CÁLCULO BÁSICO DE DISTRIBUCIÓN (el primer parámetro es arbitrario)
+            var identificadores = distribucion(100, client, resultado);
 
-            //Llamada central de Merge Sort
+            //LLAMADA CENTRAL DE MERGE SORT
             var yeah = MergeSort(client, identificadores, identificadores.Count, principal, resultado, 1, resultado.Count);
             WriteFileYeah(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "oraciones.txt"), yeah);
 
