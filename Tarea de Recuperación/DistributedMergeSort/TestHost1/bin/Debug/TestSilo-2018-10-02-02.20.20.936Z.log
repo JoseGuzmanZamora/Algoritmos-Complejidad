@@ -1,0 +1,988 @@
+[2018-10-02 02:20:21.258 GMT     1	INFO   	100404	Silo	127.0.0.1:22222]	Silo starting with GC settings: ServerGC=True GCLatencyMode=Batch	
+[2018-10-02 02:20:21.262 GMT     1	INFO   	100403	Silo	127.0.0.1:22222]	-------------- Initializing Primary silo on host MSI MachineName MSI at 127.0.0.1:22222, gen 276142821 --------------	
+[2018-10-02 02:20:21.298 GMT     1	INFO   	100415	Silo	127.0.0.1:22222]	Starting silo TestSilo with the following configuration= 
+Config File Name: 
+Host: MSI
+Start time: 2018-10-02 02:20:21.264 GMT
+Primary node: 127.0.0.1:22222
+Platform version info:
+   Orleans version: 1.5.0.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\TestHost1.exe.Config
+   GC Type=Server GCLatencyMode=Batch
+Global configuration:
+   System Ids:
+      ServiceId: 00000000-0000-0000-0000-000000000000
+      DeploymentId: 
+   Subnet: 
+   Seed nodes: 127.0.0.1:22222
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Silo Sender queues: 8
+       Gateway Sender queues: 8
+       Client Drop Timeout: 00:01:00
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Maximum forward count: 2
+       Fallback serializer: 
+   Liveness:
+      LivenessEnabled: True
+      LivenessType: MembershipTableGrain
+      ProbeTimeout: 00:00:10
+      TableRefreshTimeout: 00:01:00
+      DeathVoteExpirationTimeout: 00:02:00
+      NumMissedProbesLimit: 3
+      NumProbedSilos: 3
+      NumVotesForDeathDeclaration: 2
+      UseLivenessGossip: True
+      ValidateInitialConnectivity: True
+      IAmAliveTablePublishTimeout: 00:05:00
+      NumMissedTableIAmAliveLimit: 2
+      MaxJoinAttemptTime: 00:05:00
+      ExpectedClusterSize: 20
+   MultiClusterNetwork: N/A
+   SystemStore:
+      SystemStore ConnectionString: null
+      Reminders ConnectionString: null
+   Application:
+      Defaults:
+         Deactivate if idle for: 02:00:00
+
+   PlacementStrategy: 
+         Default Placement Strategy: RandomPlacement
+         Deployment Load Publisher Refresh Time: 00:00:01
+         Activation CountBased Placement Choose Out Of: 2
+   Grain directory cache:
+      Maximum size: 1000000 grains
+      Initial TTL: 00:00:30
+      Maximum TTL: 00:04:00
+      TTL extension factor: 2.00
+      Directory Caching Strategy: Adaptive
+   Grain directory:
+      Lazy deregistration delay: 00:01:00
+      Client registration refresh: 00:05:00
+   Reminder Service:
+       ReminderServiceType: ReminderTableGrain
+   Consistent Ring:
+       Use Virtual Buckets Consistent Ring: True
+       Num Virtual Buckets Consistent Ring: 30
+   Providers:
+       No providers configured.
+Silo configuration:
+   Silo Name: TestSilo
+   Generation: 276142821
+   Host Name or IP Address: localhost
+   DNS Host Name: MSI
+   Port: 22222
+   Subnet: 
+   Preferred Address Family: InterNetwork
+   Proxy Gateway: 127.0.0.1:40000
+   IsPrimaryNode: True
+   Scheduler: 
+         Max Active Threads: 8
+         Processor Count: 8
+         Delay Warning Threshold: 00:00:10
+         Activation Scheduling Quantum: 00:00:00.1000000
+         Turn Warning Length Threshold: 00:00:00.2000000
+         Inject More Worker Threads: False
+         MinDotNetThreadPoolSize: 200
+         .NET thread pool sizes - Min: Worker Threads=8 Completion Port Threads=8
+         .NET thread pool sizes - Max: Worker Threads=32767 Completion Port Threads=1000
+         .NET ServicePointManager - DefaultConnectionLimit=200 Expect100Continue=False UseNagleAlgorithm=False
+   Load Shedding Enabled: False
+   Load Shedding Limit: 95
+   SiloShutdownEventName: 
+   Debug: 
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\TestSilo-2018-10-02-02.20.20.936Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+
+	
+[2018-10-02 02:20:22.694 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Searching for assemblies in C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug...	
+[2018-10-02 02:20:22.756 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\MergeInterface.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:22.991 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.113 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.118 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.124 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.145 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Newtonsoft.Json.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.150 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:20:23.153 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.162 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:20:23.176 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.Collections.Immutable.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.183 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.IO.Compression.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.186 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.IO.FileSystem.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.207 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.213 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.ValueTuple.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:23.216 GMT     1	WARNING	101705	AssemblyLoader.Silo	127.0.0.1:22222]	Unable to find directory C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Applications; skipping.	
+[2018-10-02 02:20:23.218 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\MergeGrainCollection.dll...	
+[2018-10-02 02:20:23.240 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansProviders.dll...	
+[2018-10-02 02:20:23.266 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	2 assemblies loaded.	
+[2018-10-02 02:20:24.090 GMT     1	INFO   	100000	Scheduler.OrleansTaskScheduler	127.0.0.1:22222]	Starting OrleansTaskScheduler with 8 Max Active application Threads and 1 system thread.	
+[2018-10-02 02:20:24.118 GMT     1	INFO   	101010	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:22222	
+[2018-10-02 02:20:24.130 GMT     1	INFO   	101010	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:40000	
+[2018-10-02 02:20:24.183 GMT     1	INFO   	100000	VirtualBucketsRingProvider	127.0.0.1:22222]	Starting VirtualBucketsRingProvider on silo S127.0.0.1:22222:276142821/x1CCC7CBC.	
+[2018-10-02 02:20:24.229 GMT     1	INFO   	103003	VirtualBucketsRingProvider	127.0.0.1:22222]	Added Server S127.0.0.1:22222:276142821/x1CCC7CBC. Current view: [S127.0.0.1:22222:276142821 -> <MultiRange: Size=x100000000, %Ring=100.000%>]	
+[2018-10-02 02:20:24.234 GMT     1	INFO   	103005	VirtualBucketsRingProvider	127.0.0.1:22222]	-NotifyLocalRangeSubscribers about old <(0 0], Size=x100000000, %Ring=100.000%> new <MultiRange: Size=x100000000, %Ring=100.000%> increased? True	
+[2018-10-02 02:20:24.264 GMT     1	INFO   	100000	Silo	127.0.0.1:22222]	Skip multicluster oracle creation (no multicluster network configured)	
+[2018-10-02 02:20:24.267 GMT     1	INFO   	100422	Silo	127.0.0.1:22222]	-------------- Started silo S127.0.0.1:22222:276142821, ConsistentHashCode 1CCC7CBC --------------	
+[2018-10-02 02:20:24.269 GMT     1	INFO   	100288	OrleansSiloHost	127.0.0.1:22222]	Successfully initialized Orleans silo 'TestSilo' as a Primary node.	
+[2018-10-02 02:20:24.274 GMT     1	INFO   	100441	OrleansSiloHost	127.0.0.1:22222]	Silo shutdown event name: TestSilo-Shutdown	
+[2018-10-02 02:20:24.277 GMT     1	INFO   	100442	OrleansSiloHost	127.0.0.1:22222]	Created and set shutdown event TestSilo-Shutdown	
+[2018-10-02 02:20:24.292 GMT     1	INFO   	100401	Silo	127.0.0.1:22222]	Silo Start()	
+[2018-10-02 02:20:24.298 GMT     1	INFO   	100430	Silo	127.0.0.1:22222]	Configured ThreadPool.SetMinThreads() to values: 200,200. Previous values are: 8,8.	
+[2018-10-02 02:20:24.300 GMT     1	INFO   	100436	Silo	127.0.0.1:22222]	Configured .NET ServicePointManager to Expect100Continue=False, DefaultConnectionLimit=200, UseNagleAlgorithm=False to improve Azure storage performance.	
+[2018-10-02 02:20:24.350 GMT     1	INFO   	101711	AssemblyLoader.Silo	127.0.0.1:22222]	Loaded grain type summary for 9 types: 
+Grain class MergeGrainCollection.MergeGrainCollection.MergeSort [-96670387 (0xFA3CED4D)] from MergeGrainCollection.dll implementing interfaces: MergeInterface.MergeInterface.IMergeSort [1581957899 (0x5E4AC30B)]
+Grain class Orleans.LogConsistency.Orleans.LogConsistency.LogConsistentGrainBase<TView> [-2062750837 (0x850CEB8B)] from Orleans.dll implementing interfaces: 
+Grain class Orleans.Providers.Orleans.Providers.MemoryStreamQueueGrain [1359359215 (0x51062CEF)] from OrleansProviders.dll implementing interfaces: Orleans.Providers.Orleans.Providers.IMemoryStreamQueueGrain [1158152105 (0x4507FFA9)]
+Grain class Orleans.Runtime.Management.Orleans.Runtime.Management.ManagementGrain [1954798034 (0x7483D9D2)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Orleans.Runtime.IManagementGrain [-1734666656 (0x989B1660)]
+Grain class Orleans.Runtime.MembershipService.Orleans.Runtime.MembershipService.GrainBasedMembershipTable [-2103923544 (0x8298ACA8)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IMembershipTableGrain [-1256503757 (0xB51B4633)]
+Grain class Orleans.Runtime.ReminderService.Orleans.Runtime.ReminderService.GrainBasedReminderTable [-55315191 (0xFCB3F509)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IReminderTableGrain [-1135060418 (0xBC585A3E)]
+Grain class Orleans.Runtime.Versions.Orleans.Runtime.Versions.VersionStoreGrain [331003096 (0x13BAB4D8)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Versions.Orleans.Runtime.Versions.IVersionStoreGrain [-297600501 (0xEE42FA0B)], Orleans.Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Orleans.Storage.Orleans.Storage.MemoryStorageGrain [819348208 (0x30D642F0)] from OrleansRuntime.dll implementing interfaces: Orleans.Storage.Orleans.Storage.IMemoryStorageGrain [577125491 (0x22663C73)]
+Grain class Orleans.Streams.Orleans.Streams.PubSubRendezvousGrain [1903070868 (0x716E8E94)] from OrleansRuntime.dll implementing interfaces: Orleans.Streams.Orleans.Streams.IPubSubRendezvousGrain [1746702088 (0x681C8F08)]
+	
+[2018-10-02 02:20:24.409 GMT    12	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/5	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/5 on managed thread 12	
+[2018-10-02 02:20:24.408 GMT    15	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/System.9	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/System.9 on managed thread 15	
+[2018-10-02 02:20:24.409 GMT    10	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/3	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/3 on managed thread 10	
+[2018-10-02 02:20:24.409 GMT    11	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/4	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/4 on managed thread 11	
+[2018-10-02 02:20:24.610 GMT    26	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Ping	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Ping on managed thread 26	
+[2018-10-02 02:20:24.434 GMT     8	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/1	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/1 on managed thread 8	
+[2018-10-02 02:20:24.434 GMT     9	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/2	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/2 on managed thread 9	
+[2018-10-02 02:20:24.434 GMT    13	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/6	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/6 on managed thread 13	
+[2018-10-02 02:20:24.482 GMT    17	INFO   	100000	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAcceptor on managed thread 17	
+[2018-10-02 02:20:24.560 GMT    19	INFO   	100000	Runtime.Messaging.SiloMessageSender/SystemSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/SystemSender on managed thread 19	
+[2018-10-02 02:20:24.732 GMT    27	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Application	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Application on managed thread 27	
+[2018-10-02 02:20:24.457 GMT    14	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/7	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/7 on managed thread 14	
+[2018-10-02 02:20:24.434 GMT     7	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/0	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/0 on managed thread 7	
+[2018-10-02 02:20:24.758 GMT     1	INFO   	100000	Orleans.GrainDirectory.LocalGrainDirectory	127.0.0.1:22222]	Start (SeverityLevel=Info)	
+[2018-10-02 02:20:24.708 GMT    25	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/System	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/System on managed thread 25	
+[2018-10-02 02:20:24.529 GMT    18	INFO   	100000	Runtime.Messaging.SiloMessageSender/PingSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/PingSender on managed thread 18	
+[2018-10-02 02:20:25.001 GMT    17	INFO   	100328	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Stopping AsyncAgent Runtime.Messaging.IncomingMessageAcceptor that runs on managed thread 17	
+[2018-10-02 02:20:25.029 GMT    23	INFO   	100000	Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1	127.0.0.1:22222]	Starting AsyncAgent Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1 on managed thread 23	
+[2018-10-02 02:20:25.032 GMT    24	INFO   	100000	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:22222]	Starting AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer on managed thread 24	
+[2018-10-02 02:20:25.043 GMT    24	INFO   	100328	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:22222]	Stopping AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer that runs on managed thread 24	
+[2018-10-02 02:20:25.088 GMT     1	INFO   	100000	ReminderFactory	127.0.0.1:22222]	Creating reminder grain service for type=Orleans.OrleansCodeGenReminderTableGrainReference	
+[2018-10-02 02:20:25.141 GMT     5	INFO   	100000	TypeManager	127.0.0.1:22222]	OnRefreshClusterMapTimer: refresh start	
+[2018-10-02 02:20:25.148 GMT    12	INFO   	100507	Catalog	127.0.0.1:22222]	Before collection#1: memory=12MB, #activations=0, collector=<#Activations=0, #Buckets=0, buckets=[]>.	
+[2018-10-02 02:20:25.180 GMT    12	INFO   	100508	Catalog	127.0.0.1:22222]	After collection#1: memory=12MB, #activations=0, collected 0 activations, collector=<#Activations=0, #Buckets=0, buckets=[]>, collection time=00:00:00.0369129.	
+[2018-10-02 02:20:25.188 GMT    15	INFO   	100603	MembershipOracle	127.0.0.1:22222]	MembershipOracle starting on host = MSI address = S127.0.0.1:22222:276142821 at 2018-10-02 02:20:24.142 GMT, backOffMax = 00:00:20	
+[2018-10-02 02:20:25.201 GMT    15	INFO   	100635	MembershipTableFactory	127.0.0.1:22222]	Creating membership table grain	
+[2018-10-02 02:20:25.282 GMT    10	INFO   	100637	GrainBasedMembershipTable	127.0.0.1:22222]	GrainBasedMembershipTable Activated.	
+[2018-10-02 02:20:25.405 GMT    15	INFO   	100631	MembershipTableFactory	127.0.0.1:22222]	-Connected to membership table provider.	
+[2018-10-02 02:20:25.449 GMT    14	INFO   	100000	GrainBasedMembershipTable	127.0.0.1:22222]	InitializeMembershipTable True.	
+[2018-10-02 02:20:33.620 GMT    14	INFO   	100652	MembershipOracle	127.0.0.1:22222]	-CleanupTable called on silo startup. Membership table 0 silos, 0 are Active, 0 are Dead, Version=<0, 0>. All silos: []	
+[2018-10-02 02:20:33.681 GMT    14	INFO   	100660	MembershipOracle	127.0.0.1:22222]	Starting IAmAliveUpdateTimer.	
+[2018-10-02 02:20:33.703 GMT    14	INFO   	100604	MembershipOracle	127.0.0.1:22222]	-BecomeActive	
+[2018-10-02 02:20:33.724 GMT    15	INFO   	100614	MembershipOracle	127.0.0.1:22222]	About to send pings to 0 nodes in order to validate communication in the Joining state. Pinged nodes = []	
+[2018-10-02 02:20:33.738 GMT    15	INFO   	100634	MembershipOracle	127.0.0.1:22222]	-ReadAll (called from BecomeActive) Membership table 1 silos, 1 are Active, 0 are Dead, Version=<2, 5>. All silos: [SiloAddress=S127.0.0.1:22222:276142821 SiloName=TestSilo Status=Active]	
+[2018-10-02 02:20:33.743 GMT    15	INFO   	100605	MembershipOracle	127.0.0.1:22222]	-Finished BecomeActive.	
+[2018-10-02 02:20:33.749 GMT     1	INFO   	100702	WindowsPerfCountersStatistics	127.0.0.1:22222]	Starting Windows perf counter stats collection with frequency=00:00:30	
+[2018-10-02 02:20:33.768 GMT     1	INFO   	100714	SiloPerformanceMetrics	127.0.0.1:22222]	Starting Silo Table metrics reporter with reportFrequency=00:00:30	
+[2018-10-02 02:20:33.774 GMT    15	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:22222]	Starting DeploymentLoadPublisher.	
+[2018-10-02 02:20:33.811 GMT    10	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:22222]	Started DeploymentLoadPublisher.	
+[2018-10-02 02:20:33.816 GMT     1	INFO   	100000	Watchdog	127.0.0.1:22222]	Starting Silo Watchdog.	
+[2018-10-02 02:20:33.822 GMT    29	INFO   	100000	Runtime.Watchdog	127.0.0.1:22222]	Starting AsyncAgent Runtime.Watchdog on managed thread 29	
+[2018-10-02 02:20:33.893 GMT    14	INFO   	100000	GrainBasedReminderTable_S127.0.0.1:22222:276142821*grn/FCB3F509/00003039@edc420b5	127.0.0.1:22222]	GrainBasedReminderTable *grn/FCB3F509/00003039 Activated. Full identity: [ActivationAddress: S127.0.0.1:22222:276142821*grn/FCB3F509/00003039@edc420b5, Full GrainId: [GrainId: *grn/FCB3F509/0000000000000000000000000000303903fffffffcb3f509-0xBB9ED002, IdCategory: Grain, BaseTypeCode: -55315191 (xFCB3F509), PrimaryKey: 12345 (x3039), UniformHashCode: 3147747330 (0xBB9ED002)], Full ActivationId: @41ac57b8482a7def69b2fda6edc420b50000000000000000]	
+[2018-10-02 02:20:33.903 GMT    11	INFO   	102925	Orleans.Runtime.ReminderService.LocalReminderService	127.0.0.1:22222]	Starting Orleans.Runtime.ReminderService.LocalReminderService grain service on: S127.0.0.1:22222:276142821 x1CCC7CBC, with range 	
+[2018-10-02 02:20:33.986 GMT    21	INFO   	100000	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.GatewayAcceptor on managed thread 21	
+[2018-10-02 02:20:34.009 GMT     1	INFO   	100424	OrleansSiloHost	127.0.0.1:22222]	Silo startup event name: TestSilo	
+[2018-10-02 02:20:33.986 GMT    22	INFO   	100000	Runtime.Messaging.GatewayClientCleanupAgent	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.GatewayClientCleanupAgent on managed thread 22	
+[2018-10-02 02:20:34.054 GMT    21	INFO   	100328	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Stopping AsyncAgent Runtime.Messaging.GatewayAcceptor that runs on managed thread 21	
+[2018-10-02 02:20:34.099 GMT     1	INFO   	100425	OrleansSiloHost	127.0.0.1:22222]	Created and set startup event TestSilo	
+[2018-10-02 02:20:34.103 GMT     1	INFO   	100402	OrleansSiloHost	127.0.0.1:22222]	Silo TestSilo started successfully	
+[2018-10-02 02:20:34.439 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	Recursively searching for assemblies in C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug...	
+[2018-10-02 02:20:34.445 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\MergeGrainCollection.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.449 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\MergeInterface.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.455 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.460 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.466 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.470 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.474 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Newtonsoft.Json.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.478 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:20:34.482 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.486 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:20:34.489 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.Collections.Immutable.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.494 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.IO.Compression.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.498 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.IO.FileSystem.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.504 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.508 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\System.ValueTuple.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:20:34.514 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\OrleansProviders.dll...	
+[2018-10-02 02:20:34.517 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	1 assemblies loaded.	
+[2018-10-02 02:20:34.521 GMT     1	WARNING	100153	OutsideRuntimeClient	127.0.0.1:22222]	Unable to set unobserved exception handler because it was already set.	
+[2018-10-02 02:20:34.645 GMT     1	INFO   	100313	OutsideRuntimeClient	127.0.0.1:22222]	---------- Initializing OutsideRuntimeClient on MSI at 169.254.105.41 Client Id = *cli/cdb0999a ----------	
+[2018-10-02 02:20:34.658 GMT     1	INFO   	100314	OutsideRuntimeClient	127.0.0.1:22222]	---------- Starting OutsideRuntimeClient with runtime Version='1.5.0.0 (Release).' in AppDomain=<AppDomain.Id=1, AppDomain.FriendlyName=TestHost1.exe> Config= 
+ Platform version info:
+   Orleans version: 1.5.0.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\TestHost1.exe.Config
+   GC Type=Server GCLatencyMode=Batch
+   Host: MSI
+   Processor Count: 8
+Client Configuration:
+   Config File Name: 
+   Start time: 2018-10-02 02:20:34.657 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:40000
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Preferred Address Family: InterNetwork
+   DNS Host Name: MSI
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost1\bin\Debug\Client-2018-10-02-02.20.34.108Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: -00:00:00.0010000
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Fallback serializer: 
+   .NET: 
+       .NET thread pool sizes - Min: Worker Threads=200 Completion Port Threads=200
+       .NET thread pool sizes - Max: Worker Threads=32767 Completion Port Threads=1000
+   Providers:
+       No providers configured.
+	
+[2018-10-02 02:20:34.696 GMT     4	INFO   	101309	Messaging.GatewayManager	127.0.0.1:22222]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:40000/0]	
+[2018-10-02 02:20:34.737 GMT     4	INFO   	100908	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Connected to gateway at address gwy.tcp://127.0.0.1:40000/0 on trial 0.	
+[2018-10-02 02:20:34.744 GMT    33	INFO   	100000	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Starting AsyncAgent Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0 on managed thread 33	
+[2018-10-02 02:20:34.758 GMT    32	INFO   	100000	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Starting AsyncAgent Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0 on managed thread 32	
+[2018-10-02 02:20:34.764 GMT    28	INFO   	101301	Orleans.Messaging.Gateway	169.254.105.41:0]	Recorded opened socket from endpoint 127.0.0.1:51590, client ID *cli/cdb0999a.	
+[2018-10-02 02:20:34.858 GMT    36	INFO   	100000	Runtime.Messaging.GatewaySender/GatewaySiloSender_0	169.254.105.41:0]	Starting AsyncAgent Runtime.Messaging.GatewaySender/GatewaySiloSender_0 on managed thread 36	
+[2018-10-02 02:20:34.911 GMT    16	INFO   	100929	OutsideRuntimeClient	169.254.105.41:0]	---------- Started OutsideRuntimeClient with Global Client ID: C169.254.105.41:0:-276142834*cli/cdb0999a@a2fe3fa5, client GUID ID: *cli/cdb0999a	
+[2018-10-02 02:20:36.155 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:20:36.200 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/8c21b586 #56: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.263 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:20:36.274 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/8c21b586@dea09183->*cli/cdb0999a@a2fe3fa5 #56: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.359 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:20:36.399 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/3f7390a0 #57: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.460 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:20:36.471 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3f7390a0@5fe3f48b->*cli/cdb0999a@a2fe3fa5 #57: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.554 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:20:36.590 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/3f799ab9 #58: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.653 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:20:36.664 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3f799ab9@330a2d8e->*cli/cdb0999a@a2fe3fa5 #58: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.771 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:20:36.807 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/dec2c794 #59: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.856 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:20:36.869 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/dec2c794@82897ca9->*cli/cdb0999a@a2fe3fa5 #59: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:36.950 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:20:36.993 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/dbf9c792 #60: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:20:37.065 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:20:37.076 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/dbf9c792@f9123e80->*cli/cdb0999a@a2fe3fa5 #60: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:25.204 GMT     4	INFO   	100000	TypeManager	169.254.105.41:0]	OnRefreshClusterMapTimer: refresh start	
+[2018-10-02 02:21:25.207 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#2: memory=30MB, #activations=297, collector=<#Activations=295, #Buckets=2, buckets=[1h:59m:34s.794ms->147 items, 2h:0m:34s.794ms->148 items]>.	
+[2018-10-02 02:21:25.234 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#2: memory=31MB, #activations=297, collected 0 activations, collector=<#Activations=295, #Buckets=2, buckets=[1h:59m:34s.765ms->147 items, 2h:0m:34s.765ms->148 items]>, collection time=00:00:00.0297398.	
+[2018-10-02 02:21:34.714 GMT     6	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:20:34 AM	
+[2018-10-02 02:21:34.756 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 341 additional times in the previous 00:01:00.0194472	
+[2018-10-02 02:21:34.762 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:21:34.851 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 341 additional times in the previous 00:01:00.0872433	
+[2018-10-02 02:21:34.855 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:21:34.868 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 341 additional times in the previous 00:01:00.1241507	
+[2018-10-02 02:21:34.872 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/2fedaba3@9e9686a2->*cli/cdb0999a@a2fe3fa5 #461: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:34.947 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:21:35.034 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:21:35.047 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/942fa2bc@819336b4->*cli/cdb0999a@a2fe3fa5 #462: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:35.140 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:21:35.219 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:21:35.229 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/72e7598d@35025cb4->*cli/cdb0999a@a2fe3fa5 #463: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:35.326 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:21:35.404 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:21:35.414 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/a2c8e3a5@9ef9afa4->*cli/cdb0999a@a2fe3fa5 #464: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:35.529 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:21:35.605 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:21:35.616 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/66f69eb3@fbcb83aa->*cli/cdb0999a@a2fe3fa5 #465: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:36.250 GMT    34	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 349 additional times in the previous 00:01:00.0503427	
+[2018-10-02 02:21:36.255 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/4e466995 #470: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:36.425 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/766c4eb6 #471: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:36.612 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/bab38986 #473: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:36.777 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/fd0ad1a8 #474: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:21:36.967 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/f10d00a3 #475: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:25.241 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#3: memory=75MB, #activations=658, collector=<#Activations=656, #Buckets=3, buckets=[1h:58m:34s.758ms->147 items, 1h:59m:34s.758ms->358 items, 2h:0m:34s.758ms->151 items]>.	
+[2018-10-02 02:22:25.247 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#3: memory=76MB, #activations=658, collected 0 activations, collector=<#Activations=656, #Buckets=3, buckets=[1h:58m:34s.752ms->147 items, 1h:59m:34s.752ms->358 items, 2h:0m:34s.752ms->151 items]>, collection time=00:00:00.0059863.	
+[2018-10-02 02:22:34.726 GMT    20	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:21:34 AM	
+[2018-10-02 02:22:34.877 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 356 additional times in the previous 00:01:00.1211262	
+[2018-10-02 02:22:34.882 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:22:34.977 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 356 additional times in the previous 00:01:00.1261734	
+[2018-10-02 02:22:34.982 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:22:34.991 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 356 additional times in the previous 00:01:00.1231445	
+[2018-10-02 02:22:35.017 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/e48ad8af@90cbaeb6->*cli/cdb0999a@a2fe3fa5 #882: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:35.080 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:22:35.164 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:22:35.175 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0a398889@1f0292b2->*cli/cdb0999a@a2fe3fa5 #884: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:35.242 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:22:35.320 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:22:35.332 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/ed13f2bd@b2ff45b1->*cli/cdb0999a@a2fe3fa5 #885: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:35.419 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:22:35.517 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:22:35.530 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/f35ef383@e3e96883->*cli/cdb0999a@a2fe3fa5 #886: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:35.616 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:22:35.692 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:22:35.705 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/f8f9d797@205a448c->*cli/cdb0999a@a2fe3fa5 #887: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:36.256 GMT    38	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 356 additional times in the previous 00:01:00.0054965	
+[2018-10-02 02:22:36.262 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/4ee0a2af #892: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:36.427 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/add147a7 #893: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:36.605 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/b3efc4b7 #894: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:36.777 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/4576d38e #895: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:22:36.941 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/d9cac0b0 #896: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:25.261 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#4: memory=69MB, #activations=1017, collector=<#Activations=1015, #Buckets=4, buckets=[1h:57m:34s.738ms->147 items, 1h:58m:34s.738ms->358 items, 1h:59m:34s.738ms->358 items, 2h:0m:34s.738ms->152 items]>.	
+[2018-10-02 02:23:25.268 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#4: memory=70MB, #activations=1017, collected 0 activations, collector=<#Activations=1015, #Buckets=4, buckets=[1h:57m:34s.731ms->147 items, 1h:58m:34s.731ms->358 items, 1h:59m:34s.731ms->358 items, 2h:0m:34s.731ms->152 items]>, collection time=00:00:00.0065192.	
+[2018-10-02 02:23:34.747 GMT     4	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:22:34 AM	
+[2018-10-02 02:23:34.957 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 354 additional times in the previous 00:01:00.0792646	
+[2018-10-02 02:23:34.962 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:23:35.069 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 354 additional times in the previous 00:01:00.0922069	
+[2018-10-02 02:23:35.074 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:23:35.084 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 354 additional times in the previous 00:01:00.0932245	
+[2018-10-02 02:23:35.109 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/708ff28a@404d82b4->*cli/cdb0999a@a2fe3fa5 #1302: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:35.196 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:23:35.272 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:23:35.283 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/88484e94@fac4288b->*cli/cdb0999a@a2fe3fa5 #1303: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:35.363 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:23:35.447 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:23:35.459 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/727acdba@17a5e980->*cli/cdb0999a@a2fe3fa5 #1304: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:35.551 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:23:35.641 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:23:35.653 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/5fa9e7a4@8eb773bc->*cli/cdb0999a@a2fe3fa5 #1306: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:35.752 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:23:35.840 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:23:35.851 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/41c3409a@0a4aa3b1->*cli/cdb0999a@a2fe3fa5 #1307: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:36.322 GMT    28	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 353 additional times in the previous 00:01:00.0662659	
+[2018-10-02 02:23:36.326 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/f39bd998 #1310: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:36.491 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/5e994ca8 #1311: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:36.647 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/d7e0f394 #1313: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:36.814 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/4eb3ada4 #1314: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:23:36.963 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/8ecf91bb #1315: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:25.273 GMT    10	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#5: memory=59MB, #activations=1365, collector=<#Activations=1363, #Buckets=5, buckets=[1h:56m:34s.726ms->147 items, 1h:57m:34s.726ms->358 items, 1h:58m:34s.726ms->358 items, 1h:59m:34s.726ms->353 items, 2h:0m:34s.726ms->147 items]>.	
+[2018-10-02 02:24:25.281 GMT    10	INFO   	100508	Catalog	169.254.105.41:0]	After collection#5: memory=61MB, #activations=1365, collected 0 activations, collector=<#Activations=1363, #Buckets=5, buckets=[1h:56m:34s.718ms->147 items, 1h:57m:34s.718ms->358 items, 1h:58m:34s.718ms->358 items, 1h:59m:34s.718ms->353 items, 2h:0m:34s.718ms->147 items]>, collection time=00:00:00.0077862.	
+[2018-10-02 02:24:34.763 GMT     4	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:23:34 AM	
+[2018-10-02 02:24:34.960 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 344 additional times in the previous 00:01:00.0029883	
+[2018-10-02 02:24:34.966 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:24:35.140 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:24:35.234 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 345 additional times in the previous 00:01:00.1645323	
+[2018-10-02 02:24:35.239 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:24:35.248 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 345 additional times in the previous 00:01:00.1635498	
+[2018-10-02 02:24:35.273 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3380c487@20e78bb8->*cli/cdb0999a@a2fe3fa5 #1743: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:35.364 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:24:35.457 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:24:35.468 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/5a4efa83@d89e6a83->*cli/cdb0999a@a2fe3fa5 #1744: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:35.573 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:24:35.682 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:24:35.695 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/ba85b08c@9e57c293->*cli/cdb0999a@a2fe3fa5 #1745: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:35.772 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:24:35.879 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:24:35.890 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/b15bef85@923ada8c->*cli/cdb0999a@a2fe3fa5 #1746: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:36.080 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:24:36.089 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/46071c8b@829c95bd->*cli/cdb0999a@a2fe3fa5 #1747: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:36.415 GMT    38	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 344 additional times in the previous 00:01:00.0927339	
+[2018-10-02 02:24:36.420 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/dd487698 #1750: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:36.592 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/1b1138b7 #1751: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:36.772 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/7916f595 #1752: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:36.938 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/57e9189b #1753: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:24:37.150 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/a7d0c6ba #1755: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:25.289 GMT     8	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#6: memory=80MB, #activations=1722, collector=<#Activations=1720, #Buckets=6, buckets=[1h:55m:34s.710ms->147 items, 1h:56m:34s.710ms->358 items, 1h:57m:34s.710ms->358 items, 1h:58m:34s.710ms->353 items, 1h:59m:34s.710ms->349 items, 2h:0m:34s.710ms->155 items]>.	
+[2018-10-02 02:25:25.295 GMT     8	INFO   	100508	Catalog	169.254.105.41:0]	After collection#6: memory=81MB, #activations=1722, collected 0 activations, collector=<#Activations=1720, #Buckets=6, buckets=[1h:55m:34s.704ms->147 items, 1h:56m:34s.704ms->358 items, 1h:57m:34s.704ms->358 items, 1h:58m:34s.704ms->353 items, 1h:59m:34s.704ms->349 items, 2h:0m:34s.704ms->155 items]>, collection time=00:00:00.0056944.	
+[2018-10-02 02:25:33.799 GMT     6	INFO   	100704	SiloLogStatistics	169.254.105.41:0]	Statistics: ^^^
+App.Requests.Latency.Average.Millis=116.000
+App.Requests.LatencyHistogram.Millis=[0.2048:0.4095]=17, [0.4096:0.8191]=259, [0.8192:1.6383]=14, [1.6384:3.2767]=9, [3.2768:6.5535]=17, [6.5536:13.1071]=56, [13.1072:26.2143]=8, [26.2144:52.4287]=2, [52.4288:104.8575]=2, [104.8576:209.7151]=1762, [209.7152:419.4303]=5, 
+App.Requests.TimedOut.Current=0
+App.Requests.Total.Requests.Current=2151
+Catalog.Activation.Collection.NumberOfCollections.Current=6
+Catalog.Activation.Created.Current=1774
+Catalog.Activation.CurrentCount=1774
+Catalog.Activation.Destroyed.Current=0
+Catalog.Activation.FailedToActivate.Current=0
+Client.ConnectedGatewayCount=1
+ConsistentRing.AverageRangePercentage=100.000
+ConsistentRing.MyRange.RingDistance=x100000000
+ConsistentRing.MyRange.RingPercentage=100.000
+ConsistentRing.Ring=[S127.0.0.1:22222:276142821 -> <MultiRange: Size=x100000000, %Ring=100.000%>]
+ConsistentRing.RingSize=1
+Directory.CacheSize=0
+Directory.Lookups.Cache.HitRatio=0, Delta=0
+Directory.Lookups.Cache.Issued.Current=0
+Directory.Lookups.Cache.Successes.Current=0
+Directory.Lookups.Full.Issued.Current=1773
+Directory.Lookups.Local.Issued.Current=1849
+Directory.Lookups.Local.Successes.Current=76
+Directory.Lookups.LocalDirectory.Issued.Current=3622
+Directory.Lookups.LocalDirectory.Successes.Current=76
+Directory.Lookups.Remote.Received.Current=0
+Directory.Lookups.Remote.Sent.Current=0
+Directory.PartitionSize=1775
+Directory.Registrations.Issued.Current=2
+Directory.Registrations.Local.Current=2
+Directory.Registrations.Remote.Received.Current=0
+Directory.Registrations.Remote.Sent.Current=0
+Directory.Registrations.SingleAct.Issued.Current=1774
+Directory.Registrations.SingleAct.Local.Current=1774
+Directory.Registrations.SingleAct.Remote.Received.Current=0
+Directory.Registrations.SingleAct.Remote.Sent.Current=0
+Directory.Ring=[S127.0.0.1:22222:276142821/1CCC7CBC]
+Directory.Ring.MyPortion.AverageRingPercentage=100.000
+Directory.Ring.MyPortion.RingDistance=0
+Directory.Ring.MyPortion.RingPercentage=0.000
+Directory.Ring.MyPredecessors=[]
+Directory.Ring.MySuccessors=[]
+Directory.Ring.RingSize=1
+Directory.UnRegistrations.Issued.Current=0
+Directory.UnRegistrations.Local.Current=0
+Directory.UnRegistrations.Remote.Received.Current=0
+Directory.UnRegistrations.Remote.Sent.Current=0
+Directory.UnRegistrationsMany.Issued.Current=0
+Directory.UnRegistrationsMany.Remote.Received.Current=0
+Directory.UnRegistrationsMany.Remote.Sent.Current=0
+Directory.Validations.Cache.Received.Current=0
+Directory.Validations.Cache.Sent.Current=0
+Dispatcher.NewPlacement.Current=1773
+Gateway.ConnectedClients.Current=1
+Gateway.LoadShedding.Current=0
+Gateway.Received.Current=1774
+Gateway.Sent.Current=1774
+Grain.MergeGrainCollection.MergeSort.Current=1772
+Grain.Orleans.Runtime.MembershipService.GrainBasedMembershipTable.Current=1
+Grain.Orleans.Runtime.ReminderService.GrainBasedReminderTable.Current=1
+Membership.ActiveCluster=[S127.0.0.1:22222:276142821]
+Membership.ActiveClusterSize=1
+MessageCenter.ReceiveQueueLength=0
+MessageCenter.SendQueueLength=0
+Messaging.Acceptor.AllocatedSocketEventArgs.Current=1
+Messaging.Acceptor.CheckedInSocketEventArgs.Current=0
+Messaging.Acceptor.CheckedOutSocketEventArgs.Current=1
+Messaging.Acceptor.InUseSocketEventArgs=1
+Messaging.Expired.AtDispatch.Current=0
+Messaging.Expired.AtInvoke.Current=0
+Messaging.Expired.AtReceive.Current=0
+Messaging.Expired.AtRespond.Current=0
+Messaging.Expired.AtSend.Current=0
+Messaging.Processing.ActivationData.All=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Request.Current=1849
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Total.Current=1849
+Messaging.Processing.Dispatcher.Received.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Received.Direction.Request.Current=1849
+Messaging.Processing.Dispatcher.Received.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Received.OnActivationContext.Current=76
+Messaging.Processing.Dispatcher.Received.OnNullContext.Current=1773
+Messaging.Processing.Dispatcher.Received.Total.Current=1849
+Messaging.Processing.IGC.Forwarded.Current=0
+Messaging.Processing.IGC.ReRoute.Current=0
+Messaging.Processing.IGC.Resent.Current=0
+Messaging.Processing.IMA.Enqueued.ToActivationContex.Current=76
+Messaging.Processing.IMA.Enqueued.ToNullContex.Current=1773
+Messaging.Processing.IMA.Enqueued.ToSystemTargetContex.Current=679
+Messaging.Processing.IMA.Received.Current=2528
+Messaging.Received.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Received.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Received.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Received.Bytes.Header.Current=670722
+Messaging.Received.Bytes.Total.Current=5487721889
+Messaging.Received.Direction.OneWay.Current=0
+Messaging.Received.Direction.Request.Current=1774
+Messaging.Received.Direction.Response.Current=1774
+Messaging.Received.Messages.From.Null.Current=1774
+Messaging.Received.Messages.From.S127.0.0.1:40000:0.Current=1774
+Messaging.Received.Messages.Total.Current=3548
+Messaging.Received.MessageSizeHistogram.Bytes=[128:255]=13, [256:511]=2, [1024:2047]=1, [1048576:2097151]=3532, 
+Messaging.Rerouted.OneWay.Current=0
+Messaging.Rerouted.Request.Current=1774
+Messaging.Rerouted.Response.Current=0
+Messaging.Sent.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Sent.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Sent.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Sent.Bytes.Header.Current=670722
+Messaging.Sent.Bytes.Total.Current=5487750273
+Messaging.Sent.Direction.OneWay.Current=0
+Messaging.Sent.Direction.Request.Current=1774
+Messaging.Sent.Direction.Response.Current=1774
+Messaging.Sent.LocalMessages.Current=2528
+Messaging.Sent.Messages.To.Null.Current=1774
+Messaging.Sent.Messages.To.S127.0.0.1:40000:0.Current=1774
+Messaging.Sent.Messages.Total.Current=3548
+Messaging.Sent.MessageSizeHistogram.Bytes=[128:255]=1, [256:511]=14, [1024:2047]=1, [1048576:2097151]=3532, 
+Networking.Sockets.ClientToGateway.Duplex.Closed.Current=0
+Networking.Sockets.ClientToGateway.Duplex.Opened.Current=2
+Networking.Sockets.GatewayToClient.Duplex.Closed.Current=0
+Networking.Sockets.GatewayToClient.Duplex.Opened.Current=0
+Networking.Sockets.Silo.Receiving.Closed.Current=0
+Networking.Sockets.Silo.Receiving.Opened.Current=0
+Networking.Sockets.Silo.Sending.Closed.Current=0
+Networking.Sockets.Silo.Sending.Opened.Current=0
+Queues.QueueSize.Instantaneous.Scheduler.LevelOne=0
+Reminders.AverageTardiness.Seconds=0 Secs
+Reminders.NumberOfActiveReminders=0
+Reminders.TicksDelivered.Current=0
+Runtime.CpuUsage=37.061
+Runtime.DOT.NET.ThreadPool.InUse.CompletionPortThreads=0
+Runtime.DOT.NET.ThreadPool.InUse.WorkerThreads=2
+Runtime.GC.AllocatedBytesInKbPerSec=350048.500
+Runtime.GC.GenCollectonCount=gen0=1635, gen1=480, gen2=480
+Runtime.GC.GenSizesKb=gen0=92160.06, gen1=269.01, gen2=16166.02
+Runtime.GC.LargeObjectHeapSizeKb=36668.660
+Runtime.GC.NumberOfInducedGCs=2.000
+Runtime.GC.PercentOfTimeInGC=0.376
+Runtime.GC.PromotedFinalizationMemoryFromGen0Kb=0.000
+Runtime.GC.PromotedMemoryFromGen1Kb=0.000
+Runtime.GC.TotalMemoryKb=61244
+Runtime.IsOverloaded=False
+Runtime.Memory.AvailableMemoryMb=8672
+Runtime.Memory.TotalPhysicalMemoryMb=16384
+Runtime.Threads.AsynchAgent.Messaging.GatewayClientReceiver.Current=1
+Runtime.Threads.AsynchAgent.Messaging.GatewayConnection.Current=1
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1.Current=1
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayClientCleanupAgent.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewaySender.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAgent.Current=3
+Runtime.Threads.AsynchAgent.Runtime.Messaging.SiloMessageSender.Current=2
+Runtime.Threads.AsynchAgent.Runtime.Scheduler.WorkerPoolThread.Current=9
+Runtime.Threads.AsynchAgent.Runtime.Watchdog.Current=1
+Runtime.Threads.AsynchAgent.TotalThreadsCreated.Current=23
+Scheduler.NumLongQueueWaitTimes.Current=0
+Scheduler.NumLongRunningTurns.Current=0
+Scheduler.WorkItemGroupCount=1787
+Serialization.BufferPool.AllocatedBuffers.Current=1780
+Serialization.BufferPool.BuffersInPool=250
+Serialization.BufferPool.CheckedInBuffers.Current=3356548
+Serialization.BufferPool.CheckedOutBuffers.Current=3357223
+Serialization.BufferPool.DroppedBuffers.Current=0
+Serialization.BufferPool.DroppedTooLargeBuffers.Current=0
+Serialization.BufferPool.InUse.AllocatedAndNotInPool_Buffers=1530
+Serialization.BufferPool.InUse.CheckedOutAndNotCheckedIn_Buffers=675
+Silo.StartTime=2018-10-02 02:20:21.253 GMT
+Storage.Activate.Errors.Current=0
+Storage.Activate.Total.Current=0
+Storage.Clear.Errors.Current=0
+Storage.Clear.Latency=0 Secs
+Storage.Clear.Total.Current=0
+Storage.Read.Errors.Current=0
+Storage.Read.Latency=0 Secs
+Storage.Read.Total.Current=0
+Storage.Write.Errors.Current=0
+Storage.Write.Latency=0 Secs
+Storage.Write.Total.Current=0
+SystemTarget..Current=3
+Watchdog.NumHealthChecks.Current=0
+	
+[2018-10-02 02:25:34.768 GMT     4	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:24:34 AM	
+[2018-10-02 02:25:34.916 GMT     6	INFO   	100704	ClientLogStatistics	169.254.105.41:0]	Statistics: ^^^
+App.Requests.Latency.Average.Millis=116.000
+App.Requests.LatencyHistogram.Millis=[0.2048:0.4095]=17, [0.4096:0.8191]=260, [0.8192:1.6383]=14, [1.6384:3.2767]=9, [3.2768:6.5535]=17, [6.5536:13.1071]=56, [13.1072:26.2143]=8, [26.2144:52.4287]=2, [52.4288:104.8575]=2, [104.8576:209.7151]=1769, [209.7152:419.4303]=5, 
+App.Requests.TimedOut.Current=0
+App.Requests.Total.Requests.Current=2159,      Delta=8
+Catalog.Activation.Collection.NumberOfCollections.Current=6
+Catalog.Activation.Created.Current=1781,      Delta=7
+Catalog.Activation.CurrentCount=1781
+Catalog.Activation.Destroyed.Current=0
+Catalog.Activation.FailedToActivate.Current=0
+Client.ConnectedGatewayCount=1
+ConsistentRing.AverageRangePercentage=100.000
+ConsistentRing.MyRange.RingDistance=x100000000
+ConsistentRing.MyRange.RingPercentage=100.000
+ConsistentRing.Ring=[S127.0.0.1:22222:276142821 -> <MultiRange: Size=x100000000, %Ring=100.000%>]
+ConsistentRing.RingSize=1
+Directory.CacheSize=0
+Directory.Lookups.Cache.HitRatio=0, Delta=0
+Directory.Lookups.Cache.Issued.Current=0
+Directory.Lookups.Cache.Successes.Current=0
+Directory.Lookups.Full.Issued.Current=1780,      Delta=7
+Directory.Lookups.Local.Issued.Current=1856,      Delta=7
+Directory.Lookups.Local.Successes.Current=76
+Directory.Lookups.LocalDirectory.Issued.Current=3636,      Delta=14
+Directory.Lookups.LocalDirectory.Successes.Current=76
+Directory.Lookups.Remote.Received.Current=0
+Directory.Lookups.Remote.Sent.Current=0
+Directory.PartitionSize=1782
+Directory.Registrations.Issued.Current=2
+Directory.Registrations.Local.Current=2
+Directory.Registrations.Remote.Received.Current=0
+Directory.Registrations.Remote.Sent.Current=0
+Directory.Registrations.SingleAct.Issued.Current=1781,      Delta=7
+Directory.Registrations.SingleAct.Local.Current=1781,      Delta=7
+Directory.Registrations.SingleAct.Remote.Received.Current=0
+Directory.Registrations.SingleAct.Remote.Sent.Current=0
+Directory.Ring=[S127.0.0.1:22222:276142821/1CCC7CBC]
+Directory.Ring.MyPortion.AverageRingPercentage=100.000
+Directory.Ring.MyPortion.RingDistance=0
+Directory.Ring.MyPortion.RingPercentage=0.000
+Directory.Ring.MyPredecessors=[]
+Directory.Ring.MySuccessors=[]
+Directory.Ring.RingSize=1
+Directory.UnRegistrations.Issued.Current=0
+Directory.UnRegistrations.Local.Current=0
+Directory.UnRegistrations.Remote.Received.Current=0
+Directory.UnRegistrations.Remote.Sent.Current=0
+Directory.UnRegistrationsMany.Issued.Current=0
+Directory.UnRegistrationsMany.Remote.Received.Current=0
+Directory.UnRegistrationsMany.Remote.Sent.Current=0
+Directory.Validations.Cache.Received.Current=0
+Directory.Validations.Cache.Sent.Current=0
+Dispatcher.NewPlacement.Current=1780,      Delta=7
+Gateway.ConnectedClients.Current=1
+Gateway.LoadShedding.Current=0
+Gateway.Received.Current=1781,      Delta=7
+Gateway.Sent.Current=1781,      Delta=7
+Grain.MergeGrainCollection.MergeSort.Current=1779
+Grain.Orleans.Runtime.MembershipService.GrainBasedMembershipTable.Current=1
+Grain.Orleans.Runtime.ReminderService.GrainBasedReminderTable.Current=1
+Membership.ActiveCluster=[S127.0.0.1:22222:276142821]
+Membership.ActiveClusterSize=1
+MessageCenter.ReceiveQueueLength=0
+MessageCenter.SendQueueLength=0
+Messaging.Acceptor.AllocatedSocketEventArgs.Current=1
+Messaging.Acceptor.CheckedInSocketEventArgs.Current=0
+Messaging.Acceptor.CheckedOutSocketEventArgs.Current=1
+Messaging.Acceptor.InUseSocketEventArgs=1
+Messaging.Expired.AtDispatch.Current=0
+Messaging.Expired.AtInvoke.Current=0
+Messaging.Expired.AtReceive.Current=0
+Messaging.Expired.AtRespond.Current=0
+Messaging.Expired.AtSend.Current=0
+Messaging.Processing.ActivationData.All=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Request.Current=1856,      Delta=7
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Total.Current=1856,      Delta=7
+Messaging.Processing.Dispatcher.Received.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Received.Direction.Request.Current=1856,      Delta=7
+Messaging.Processing.Dispatcher.Received.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Received.OnActivationContext.Current=76
+Messaging.Processing.Dispatcher.Received.OnNullContext.Current=1780,      Delta=7
+Messaging.Processing.Dispatcher.Received.Total.Current=1856,      Delta=7
+Messaging.Processing.IGC.Forwarded.Current=0
+Messaging.Processing.IGC.ReRoute.Current=0
+Messaging.Processing.IGC.Resent.Current=0
+Messaging.Processing.IMA.Enqueued.ToActivationContex.Current=76
+Messaging.Processing.IMA.Enqueued.ToNullContex.Current=1780,      Delta=7
+Messaging.Processing.IMA.Enqueued.ToSystemTargetContex.Current=681,      Delta=2
+Messaging.Processing.IMA.Received.Current=2537,      Delta=9
+Messaging.Received.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Received.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Received.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Received.Bytes.Header.Current=673368,      Delta=2646
+Messaging.Received.Bytes.Total.Current=5509473878,      Delta=21751989
+Messaging.Received.Direction.OneWay.Current=0
+Messaging.Received.Direction.Request.Current=1781,      Delta=7
+Messaging.Received.Direction.Response.Current=1781,      Delta=7
+Messaging.Received.Messages.From.Null.Current=1781,      Delta=7
+Messaging.Received.Messages.From.S127.0.0.1:40000:0.Current=1781,      Delta=7
+Messaging.Received.Messages.Total.Current=3562,      Delta=14
+Messaging.Received.MessageSizeHistogram.Bytes=[128:255]=13, [256:511]=2, [1024:2047]=1, [1048576:2097151]=3546, 
+Messaging.Rerouted.OneWay.Current=0
+Messaging.Rerouted.Request.Current=1781,      Delta=7
+Messaging.Rerouted.Response.Current=0
+Messaging.Sent.BatchSize.PerSocketDirection.ClientToGateway=0.000
+Messaging.Sent.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Sent.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.ClientToGateway=
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Sent.Bytes.Header.Current=673368,      Delta=2471
+Messaging.Sent.Bytes.Total.Current=5509502374,      Delta=20198379
+Messaging.Sent.Direction.OneWay.Current=0
+Messaging.Sent.Direction.Request.Current=1781,      Delta=6
+Messaging.Sent.Direction.Response.Current=1781,      Delta=7
+Messaging.Sent.LocalMessages.Current=2537,      Delta=9
+Messaging.Sent.Messages.To.Null.Current=1781,      Delta=7
+Messaging.Sent.Messages.To.S127.0.0.1:40000:0.Current=1781,      Delta=6
+Messaging.Sent.Messages.Total.Current=3562,      Delta=13
+Messaging.Sent.MessageSizeHistogram.Bytes=[128:255]=1, [256:511]=14, [1024:2047]=1, [1048576:2097151]=3546, 
+Networking.Sockets.ClientToGateway.Duplex.Closed.Current=0
+Networking.Sockets.ClientToGateway.Duplex.Opened.Current=2
+Networking.Sockets.GatewayToClient.Duplex.Closed.Current=0
+Networking.Sockets.GatewayToClient.Duplex.Opened.Current=0
+Networking.Sockets.Silo.Receiving.Closed.Current=0
+Networking.Sockets.Silo.Receiving.Opened.Current=0
+Networking.Sockets.Silo.Sending.Closed.Current=0
+Networking.Sockets.Silo.Sending.Opened.Current=0
+Queues.QueueSize.Instantaneous.Scheduler.LevelOne=0
+Reminders.AverageTardiness.Seconds=0 Secs
+Reminders.NumberOfActiveReminders=0
+Reminders.TicksDelivered.Current=0
+Runtime.CpuUsage=35.354
+Runtime.DOT.NET.ThreadPool.InUse.CompletionPortThreads=0
+Runtime.DOT.NET.ThreadPool.InUse.WorkerThreads=2
+Runtime.GC.AllocatedBytesInKbPerSec=331340.000
+Runtime.GC.GenCollectonCount=gen0=1641, gen1=483, gen2=483
+Runtime.GC.GenSizesKb=gen0=92160.06, gen1=79.86, gen2=16242.41
+Runtime.GC.LargeObjectHeapSizeKb=23317.660
+Runtime.GC.NumberOfInducedGCs=2.000
+Runtime.GC.PercentOfTimeInGC=6.324
+Runtime.GC.PromotedFinalizationMemoryFromGen0Kb=0.094
+Runtime.GC.PromotedMemoryFromGen1Kb=24.367
+Runtime.GC.TotalMemoryKb=55317
+Runtime.IsOverloaded=False
+Runtime.Memory.AvailableMemoryMb=8665
+Runtime.Memory.TotalPhysicalMemoryMb=16384
+Runtime.Threads.AsynchAgent.Messaging.GatewayClientReceiver.Current=1
+Runtime.Threads.AsynchAgent.Messaging.GatewayConnection.Current=1
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1.Current=1
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayClientCleanupAgent.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewaySender.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAgent.Current=3
+Runtime.Threads.AsynchAgent.Runtime.Messaging.SiloMessageSender.Current=2
+Runtime.Threads.AsynchAgent.Runtime.Scheduler.WorkerPoolThread.Current=9
+Runtime.Threads.AsynchAgent.Runtime.Watchdog.Current=1
+Runtime.Threads.AsynchAgent.TotalThreadsCreated.Current=23
+Scheduler.NumLongQueueWaitTimes.Current=0
+Scheduler.NumLongRunningTurns.Current=0
+Scheduler.WorkItemGroupCount=1794
+Serialization.BufferPool.AllocatedBuffers.Current=1780
+Serialization.BufferPool.BuffersInPool=250
+Serialization.BufferPool.CheckedInBuffers.Current=3369850,      Delta=12921
+Serialization.BufferPool.CheckedOutBuffers.Current=3370377,      Delta=12679
+Serialization.BufferPool.DroppedBuffers.Current=0
+Serialization.BufferPool.DroppedTooLargeBuffers.Current=0
+Serialization.BufferPool.InUse.AllocatedAndNotInPool_Buffers=1530
+Serialization.BufferPool.InUse.CheckedOutAndNotCheckedIn_Buffers=527
+Silo.StartTime=2018-10-02 02:20:21.253 GMT
+Storage.Activate.Errors.Current=0
+Storage.Activate.Total.Current=0
+Storage.Clear.Errors.Current=0
+Storage.Clear.Latency=0 Secs
+Storage.Clear.Total.Current=0
+Storage.Read.Errors.Current=0
+Storage.Read.Latency=0 Secs
+Storage.Read.Total.Current=0
+Storage.Write.Errors.Current=0
+Storage.Write.Latency=0 Secs
+Storage.Write.Total.Current=0
+SystemTarget..Current=3
+Watchdog.NumHealthChecks.Current=1,      Delta=1
+	
+[2018-10-02 02:25:34.978 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 353 additional times in the previous 00:01:00.0184146	
+[2018-10-02 02:25:34.983 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:25:35.153 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:25:35.255 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 353 additional times in the previous 00:01:00.0214514	
+[2018-10-02 02:25:35.260 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:25:35.269 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 353 additional times in the previous 00:01:00.0214182	
+[2018-10-02 02:25:35.296 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/7def2cb7@d340d380->*cli/cdb0999a@a2fe3fa5 #2162: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:35.389 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:25:35.500 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:25:35.531 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/66cd04b0@28a7b6a9->*cli/cdb0999a@a2fe3fa5 #2163: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:35.629 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:25:35.728 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:25:35.742 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/2010c880@c706209d->*cli/cdb0999a@a2fe3fa5 #2165: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:35.844 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:25:35.921 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:25:35.932 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/1e3aeaa9@8141e59a->*cli/cdb0999a@a2fe3fa5 #2166: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:36.130 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:25:36.141 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/8645f3a8@6e791abb->*cli/cdb0999a@a2fe3fa5 #2167: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:36.436 GMT    35	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 353 additional times in the previous 00:01:00.0214285	
+[2018-10-02 02:25:36.441 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/74f98084 #2169: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:36.609 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/eb7fd6a3 #2171: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:36.758 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/ed596687 #2172: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:36.924 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/1abefeba #2173: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:25:37.101 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/75f2d485 #2174: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:25.309 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#7: memory=55MB, #activations=2079, collector=<#Activations=2077, #Buckets=7, buckets=[1h:54m:34s.690ms->147 items, 1h:55m:34s.690ms->358 items, 1h:56m:34s.690ms->358 items, 1h:57m:34s.690ms->353 items, 1h:58m:34s.690ms->349 items, 1h:59m:34s.690ms->361 items, 2h:0m:34s.690ms->151 items]>.	
+[2018-10-02 02:26:25.314 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#7: memory=56MB, #activations=2079, collected 0 activations, collector=<#Activations=2077, #Buckets=7, buckets=[1h:54m:34s.685ms->147 items, 1h:55m:34s.685ms->358 items, 1h:56m:34s.685ms->358 items, 1h:57m:34s.685ms->353 items, 1h:58m:34s.685ms->349 items, 1h:59m:34s.685ms->361 items, 2h:0m:34s.685ms->151 items]>, collection time=00:00:00.0046557.	
+[2018-10-02 02:26:34.778 GMT     4	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:25:34 AM	
+[2018-10-02 02:26:35.105 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 351 additional times in the previous 00:01:00.1271362	
+[2018-10-02 02:26:35.110 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:26:35.273 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:26:35.353 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 351 additional times in the previous 00:01:00.0981826	
+[2018-10-02 02:26:35.360 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:26:35.370 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 351 additional times in the previous 00:01:00.1012068	
+[2018-10-02 02:26:35.396 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/a09800a2@879a058d->*cli/cdb0999a@a2fe3fa5 #2579: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:35.474 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:26:35.565 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:26:35.577 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/327935ab@c2014baa->*cli/cdb0999a@a2fe3fa5 #2580: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:35.685 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:26:35.766 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:26:35.776 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/b978b4a2@61748daf->*cli/cdb0999a@a2fe3fa5 #2581: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:35.900 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:26:35.985 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:26:35.996 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/4d80c994@b2868cb2->*cli/cdb0999a@a2fe3fa5 #2582: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:36.215 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:26:36.226 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/e56fc2b8@2dbc9582->*cli/cdb0999a@a2fe3fa5 #2584: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:36.516 GMT    34	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 351 additional times in the previous 00:01:00.0802531	
+[2018-10-02 02:26:36.521 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/f578f0a1 #2586: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:36.676 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/f5d8799f #2587: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:36.856 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/af977690 #2588: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:37.035 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/8be5b5b1 #2589: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:26:37.216 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/265eebae #2591: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:25.328 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#8: memory=94MB, #activations=2437, collector=<#Activations=2435, #Buckets=8, buckets=[1h:53m:34s.671ms->147 items, 1h:54m:34s.671ms->358 items, 1h:55m:34s.671ms->358 items, 1h:56m:34s.671ms->353 items, 1h:57m:34s.671ms->349 items, 1h:58m:34s.671ms->361 items, 1h:59m:34s.671ms->358 items, 2h:0m:34s.671ms->151 items]>.	
+[2018-10-02 02:27:25.333 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#8: memory=95MB, #activations=2437, collected 0 activations, collector=<#Activations=2435, #Buckets=8, buckets=[1h:53m:34s.666ms->147 items, 1h:54m:34s.666ms->358 items, 1h:55m:34s.666ms->358 items, 1h:56m:34s.666ms->353 items, 1h:57m:34s.666ms->349 items, 1h:58m:34s.666ms->361 items, 1h:59m:34s.666ms->358 items, 2h:0m:34s.666ms->151 items]>, collection time=00:00:00.0047415.	
+[2018-10-02 02:27:34.806 GMT    16	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:26:34 AM	
+[2018-10-02 02:27:35.228 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 354 additional times in the previous 00:01:00.1231484	
+[2018-10-02 02:27:35.232 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:27:35.422 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:27:35.499 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 354 additional times in the previous 00:01:00.1440926	
+[2018-10-02 02:27:35.504 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:27:35.513 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 354 additional times in the previous 00:01:00.1430939	
+[2018-10-02 02:27:35.518 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/cf1f6daf@cfc9f7a3->*cli/cdb0999a@a2fe3fa5 #2998: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:35.598 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:27:35.687 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:27:35.697 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/5843b696@13c5c099->*cli/cdb0999a@a2fe3fa5 #2999: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:35.788 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:27:35.879 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:27:35.889 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/f86c10b4@ad7f84aa->*cli/cdb0999a@a2fe3fa5 #3001: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:35.985 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:27:36.075 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:27:36.086 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/c304febf@836e79ad->*cli/cdb0999a@a2fe3fa5 #3002: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:36.287 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:27:36.297 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3a667e86@440680bc->*cli/cdb0999a@a2fe3fa5 #3003: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:36.592 GMT    34	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 354 additional times in the previous 00:01:00.0752761	
+[2018-10-02 02:27:36.597 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/06d06086 #3005: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:36.772 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/7ac128a4 #3007: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:36.932 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/966ce39d #3008: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:37.092 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/280459aa #3009: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:27:37.240 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/f0db8fb2 #3010: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:25.339 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#9: memory=106MB, #activations=2795, collector=<#Activations=2793, #Buckets=9, buckets=[1h:52m:34s.661ms->147 items, 1h:53m:34s.661ms->358 items, 1h:54m:34s.661ms->358 items, 1h:55m:34s.661ms->353 items, 1h:56m:34s.661ms->349 items, 1h:57m:34s.661ms->361 items, 1h:58m:34s.661ms->358 items, 1h:59m:34s.661ms->357 items, 2h:0m:34s.661ms->152 items]>.	
+[2018-10-02 02:28:25.344 GMT    15	INFO   	100508	Catalog	169.254.105.41:0]	After collection#9: memory=107MB, #activations=2795, collected 0 activations, collector=<#Activations=2793, #Buckets=9, buckets=[1h:52m:34s.655ms->147 items, 1h:53m:34s.655ms->358 items, 1h:54m:34s.655ms->358 items, 1h:55m:34s.655ms->353 items, 1h:56m:34s.655ms->349 items, 1h:57m:34s.655ms->361 items, 1h:58m:34s.655ms->358 items, 1h:59m:34s.655ms->357 items, 2h:0m:34s.655ms->152 items]>, collection time=00:00:00.0057505.	
+[2018-10-02 02:28:34.822 GMT     4	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:27:34 AM	
+[2018-10-02 02:28:35.315 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 353 additional times in the previous 00:01:00.0862798	
+[2018-10-02 02:28:35.319 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:28:35.488 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:28:35.564 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 353 additional times in the previous 00:01:00.0663351	
+[2018-10-02 02:28:35.569 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:28:35.577 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 353 additional times in the previous 00:01:00.0633065	
+[2018-10-02 02:28:35.603 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/de3ce4bb@fe8f5b9d->*cli/cdb0999a@a2fe3fa5 #3417: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:35.685 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:28:35.769 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:28:35.781 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3c14f796@2c9ae7a4->*cli/cdb0999a@a2fe3fa5 #3418: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:35.883 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:28:35.960 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:28:35.971 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/3f6acb9d@b9f891a6->*cli/cdb0999a@a2fe3fa5 #3419: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:36.051 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:28:36.148 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:28:36.160 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/23ef4390@b1b5b495->*cli/cdb0999a@a2fe3fa5 #3420: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:36.330 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:28:36.342 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/ee93408d@d140d0b3->*cli/cdb0999a@a2fe3fa5 #3422: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:36.620 GMT    38	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 353 additional times in the previous 00:01:00.0284026	
+[2018-10-02 02:28:36.625 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/9cc06d8e #3424: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:36.799 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/b06036b6 #3425: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:36.973 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/034a93be #3426: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:37.150 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/a44a109f #3427: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:28:37.322 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/95fe1d90 #3429: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:25.362 GMT    11	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#10: memory=54MB, #activations=3151, collector=<#Activations=3149, #Buckets=10, buckets=[1h:51m:34s.637ms->147 items, 1h:52m:34s.637ms->358 items, 1h:53m:34s.637ms->358 items, 1h:54m:34s.637ms->353 items, 1h:55m:34s.637ms->349 items, 1h:56m:34s.637ms->361 items, 1h:57m:34s.637ms->358 items, 1h:58m:34s.637ms->357 items, 1h:59m:34s.637ms->357 items, 2h:0m:34s.637ms->151 items]>.	
+[2018-10-02 02:29:25.369 GMT    11	INFO   	100508	Catalog	169.254.105.41:0]	After collection#10: memory=55MB, #activations=3151, collected 0 activations, collector=<#Activations=3149, #Buckets=10, buckets=[1h:51m:34s.630ms->147 items, 1h:52m:34s.630ms->358 items, 1h:53m:34s.630ms->358 items, 1h:54m:34s.630ms->353 items, 1h:55m:34s.630ms->349 items, 1h:56m:34s.630ms->361 items, 1h:57m:34s.630ms->358 items, 1h:58m:34s.630ms->357 items, 1h:59m:34s.630ms->357 items, 2h:0m:34s.630ms->151 items]>, collection time=00:00:00.0069428.	
+[2018-10-02 02:29:34.855 GMT    16	INFO   	101309	Messaging.GatewayManager	169.254.105.41:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:40000/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:40000/0]. Previous refresh time was = 10/2/2018 2:28:34 AM	
+[2018-10-02 02:29:35.418 GMT    32	INFO   	601018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101018 occurred 352 additional times in the previous 00:01:00.1031666	
+[2018-10-02 02:29:35.423 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:29:35.599 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:29:35.679 GMT    36	INFO   	601018	Orleans.Messaging.Gateway	169.254.105.41:0]	Log code 101018 occurred 352 additional times in the previous 00:01:00.1151323	
+[2018-10-02 02:29:35.684 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:29:35.694 GMT    33	INFO   	601019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Log code 101019 occurred 352 additional times in the previous 00:01:00.1171625	
+[2018-10-02 02:29:35.720 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/c976028a@3f843fad->*cli/cdb0999a@a2fe3fa5 #3864: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:35.800 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:29:35.881 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:29:35.893 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/8f0f578f@efc805b0->*cli/cdb0999a@a2fe3fa5 #3866: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:36.008 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:29:36.109 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:29:36.119 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/6c489c8b@51666193->*cli/cdb0999a@a2fe3fa5 #3867: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:36.202 GMT    32	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:29:36.284 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:29:36.295 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/2317eab9@31b3a585->*cli/cdb0999a@a2fe3fa5 #3868: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:36.476 GMT    36	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:29:36.485 GMT    33	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/9e9f9c91@f6d20e9a->*cli/cdb0999a@a2fe3fa5 #3869: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:36.800 GMT    38	INFO   	601019	IncomingMessageBuffer	169.254.105.41:0]	Log code 101019 occurred 352 additional times in the previous 00:01:00.1800317	
+[2018-10-02 02:29:36.806 GMT    38	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/b3698cbe #3872: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:36.973 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/7888fd9e #3873: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:37.141 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/95948280 #3874: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:37.333 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/7ce358aa #3875: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:29:37.483 GMT    34	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/cdb0999a@a2fe3fa5->S127.0.0.1:40000:0*grn/FA3CED4D/79224987 #3876: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:30:25.385 GMT    15	INFO   	100507	Catalog	169.254.105.41:0]	Before collection#11: memory=44MB, #activations=3503, collector=<#Activations=3501, #Buckets=11, buckets=[1h:50m:34s.614ms->147 items, 1h:51m:34s.614ms->358 items, 1h:52m:34s.614ms->358 items, 1h:53m:34s.614ms->353 items, 1h:54m:34s.614ms->349 items, 1h:55m:34s.614ms->361 items, 1h:56m:34s.614ms->358 items, 1h:57m:34s.614ms->357 items, 1h:58m:34s.614ms->357 items, 1h:59m:34s.614ms->355 items, 2h:0m:34s.614ms->148 items]>.	

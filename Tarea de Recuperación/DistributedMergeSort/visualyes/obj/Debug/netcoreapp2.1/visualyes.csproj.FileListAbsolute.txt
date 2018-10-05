@@ -1,0 +1,8 @@
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.csprojAssemblyReference.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.csproj.CoreCompileInputs.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.RazorAssemblyInfo.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.RazorAssemblyInfo.cs
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.AssemblyInfoInputs.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.AssemblyInfo.cs
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.TagHelpers.input.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\visualyes\obj\Debug\netcoreapp2.1\visualyes.TagHelpers.output.cache

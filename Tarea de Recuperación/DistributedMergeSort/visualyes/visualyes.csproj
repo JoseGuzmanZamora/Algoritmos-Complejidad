@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Orleans.OrleansHost" Version="1.5.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MergeGrainCollection\MergeGrainCollection.csproj" />
+    <ProjectReference Include="..\MergeInterface\MergeInterface.csproj" />
+  </ItemGroup>
+
+</Project>

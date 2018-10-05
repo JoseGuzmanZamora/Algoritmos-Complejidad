@@ -1,0 +1,349 @@
+[2018-10-02 02:34:12.075 GMT     1	INFO   	100404	Silo	127.0.0.1:22222]	Silo starting with GC settings: ServerGC=True GCLatencyMode=Batch	
+[2018-10-02 02:34:12.084 GMT     1	INFO   	100403	Silo	127.0.0.1:22222]	-------------- Initializing Primary silo on host MSI MachineName MSI at 127.0.0.1:22222, gen 276143651 --------------	
+[2018-10-02 02:34:12.124 GMT     1	INFO   	100415	Silo	127.0.0.1:22222]	Starting silo TestSilo with the following configuration= 
+Config File Name: 
+Host: MSI
+Start time: 2018-10-02 02:34:12.088 GMT
+Primary node: 127.0.0.1:22222
+Platform version info:
+   Orleans version: 1.5.0.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe.Config
+   GC Type=Server GCLatencyMode=Batch
+Global configuration:
+   System Ids:
+      ServiceId: 00000000-0000-0000-0000-000000000000
+      DeploymentId: 
+   Subnet: 
+   Seed nodes: 127.0.0.1:22222
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Silo Sender queues: 8
+       Gateway Sender queues: 8
+       Client Drop Timeout: 00:01:00
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Maximum forward count: 2
+       Fallback serializer: 
+   Liveness:
+      LivenessEnabled: True
+      LivenessType: MembershipTableGrain
+      ProbeTimeout: 00:00:10
+      TableRefreshTimeout: 00:01:00
+      DeathVoteExpirationTimeout: 00:02:00
+      NumMissedProbesLimit: 3
+      NumProbedSilos: 3
+      NumVotesForDeathDeclaration: 2
+      UseLivenessGossip: True
+      ValidateInitialConnectivity: True
+      IAmAliveTablePublishTimeout: 00:05:00
+      NumMissedTableIAmAliveLimit: 2
+      MaxJoinAttemptTime: 00:05:00
+      ExpectedClusterSize: 20
+   MultiClusterNetwork: N/A
+   SystemStore:
+      SystemStore ConnectionString: null
+      Reminders ConnectionString: null
+   Application:
+      Defaults:
+         Deactivate if idle for: 02:00:00
+
+   PlacementStrategy: 
+         Default Placement Strategy: RandomPlacement
+         Deployment Load Publisher Refresh Time: 00:00:01
+         Activation CountBased Placement Choose Out Of: 2
+   Grain directory cache:
+      Maximum size: 1000000 grains
+      Initial TTL: 00:00:30
+      Maximum TTL: 00:04:00
+      TTL extension factor: 2.00
+      Directory Caching Strategy: Adaptive
+   Grain directory:
+      Lazy deregistration delay: 00:01:00
+      Client registration refresh: 00:05:00
+   Reminder Service:
+       ReminderServiceType: ReminderTableGrain
+   Consistent Ring:
+       Use Virtual Buckets Consistent Ring: True
+       Num Virtual Buckets Consistent Ring: 30
+   Providers:
+       No providers configured.
+Silo configuration:
+   Silo Name: TestSilo
+   Generation: 276143651
+   Host Name or IP Address: localhost
+   DNS Host Name: MSI
+   Port: 22222
+   Subnet: 
+   Preferred Address Family: InterNetwork
+   Proxy Gateway: 127.0.0.1:40000
+   IsPrimaryNode: True
+   Scheduler: 
+         Max Active Threads: 8
+         Processor Count: 8
+         Delay Warning Threshold: 00:00:10
+         Activation Scheduling Quantum: 00:00:00.1000000
+         Turn Warning Length Threshold: 00:00:00.2000000
+         Inject More Worker Threads: False
+         MinDotNetThreadPoolSize: 200
+         .NET thread pool sizes - Min: Worker Threads=8 Completion Port Threads=8
+         .NET thread pool sizes - Max: Worker Threads=32767 Completion Port Threads=1000
+         .NET ServicePointManager - DefaultConnectionLimit=200 Expect100Continue=False UseNagleAlgorithm=False
+   Load Shedding Enabled: False
+   Load Shedding Limit: 95
+   SiloShutdownEventName: 
+   Debug: 
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestSilo-2018-10-02-02.34.11.750Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+
+	
+[2018-10-02 02:34:13.858 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Searching for assemblies in C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug...	
+[2018-10-02 02:34:13.979 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.205 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.306 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.313 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.321 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.342 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.347 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:34:14.351 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.360 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:34:14.373 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.381 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.Compression.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.387 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.FileSystem.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.408 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.416 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.ValueTuple.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:14.418 GMT     1	WARNING	101705	AssemblyLoader.Silo	127.0.0.1:22222]	Unable to find directory C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Applications; skipping.	
+[2018-10-02 02:34:14.420 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.dll...	
+[2018-10-02 02:34:14.444 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.dll...	
+[2018-10-02 02:34:14.467 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:22222]	2 assemblies loaded.	
+[2018-10-02 02:34:15.399 GMT     1	INFO   	100000	Scheduler.OrleansTaskScheduler	127.0.0.1:22222]	Starting OrleansTaskScheduler with 8 Max Active application Threads and 1 system thread.	
+[2018-10-02 02:34:15.435 GMT     1	INFO   	101010	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:22222	
+[2018-10-02 02:34:15.447 GMT     1	INFO   	101010	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Opened a listening socket at address 127.0.0.1:40000	
+[2018-10-02 02:34:15.502 GMT     1	INFO   	100000	VirtualBucketsRingProvider	127.0.0.1:22222]	Starting VirtualBucketsRingProvider on silo S127.0.0.1:22222:276143651/xE41F07E0.	
+[2018-10-02 02:34:15.546 GMT     1	INFO   	103003	VirtualBucketsRingProvider	127.0.0.1:22222]	Added Server S127.0.0.1:22222:276143651/xE41F07E0. Current view: [S127.0.0.1:22222:276143651 -> <MultiRange: Size=x100000000, %Ring=100.000%>]	
+[2018-10-02 02:34:15.552 GMT     1	INFO   	103005	VirtualBucketsRingProvider	127.0.0.1:22222]	-NotifyLocalRangeSubscribers about old <(0 0], Size=x100000000, %Ring=100.000%> new <MultiRange: Size=x100000000, %Ring=100.000%> increased? True	
+[2018-10-02 02:34:15.591 GMT     1	INFO   	100000	Silo	127.0.0.1:22222]	Skip multicluster oracle creation (no multicluster network configured)	
+[2018-10-02 02:34:15.594 GMT     1	INFO   	100422	Silo	127.0.0.1:22222]	-------------- Started silo S127.0.0.1:22222:276143651, ConsistentHashCode E41F07E0 --------------	
+[2018-10-02 02:34:15.597 GMT     1	INFO   	100288	OrleansSiloHost	127.0.0.1:22222]	Successfully initialized Orleans silo 'TestSilo' as a Primary node.	
+[2018-10-02 02:34:15.603 GMT     1	INFO   	100441	OrleansSiloHost	127.0.0.1:22222]	Silo shutdown event name: TestSilo-Shutdown	
+[2018-10-02 02:34:15.605 GMT     1	INFO   	100442	OrleansSiloHost	127.0.0.1:22222]	Created and set shutdown event TestSilo-Shutdown	
+[2018-10-02 02:34:15.618 GMT     1	INFO   	100401	Silo	127.0.0.1:22222]	Silo Start()	
+[2018-10-02 02:34:15.621 GMT     1	INFO   	100430	Silo	127.0.0.1:22222]	Configured ThreadPool.SetMinThreads() to values: 200,200. Previous values are: 8,8.	
+[2018-10-02 02:34:15.623 GMT     1	INFO   	100436	Silo	127.0.0.1:22222]	Configured .NET ServicePointManager to Expect100Continue=False, DefaultConnectionLimit=200, UseNagleAlgorithm=False to improve Azure storage performance.	
+[2018-10-02 02:34:15.669 GMT     1	INFO   	101711	AssemblyLoader.Silo	127.0.0.1:22222]	Loaded grain type summary for 9 types: 
+Grain class MergeGrainCollection.MergeGrainCollection.MergeSort [-96670387 (0xFA3CED4D)] from MergeGrainCollection.dll implementing interfaces: MergeInterface.MergeInterface.IMergeSort [1581957899 (0x5E4AC30B)]
+Grain class Orleans.LogConsistency.Orleans.LogConsistency.LogConsistentGrainBase<TView> [-2062750837 (0x850CEB8B)] from Orleans.dll implementing interfaces: 
+Grain class Orleans.Providers.Orleans.Providers.MemoryStreamQueueGrain [1359359215 (0x51062CEF)] from OrleansProviders.dll implementing interfaces: Orleans.Providers.Orleans.Providers.IMemoryStreamQueueGrain [1158152105 (0x4507FFA9)]
+Grain class Orleans.Runtime.Management.Orleans.Runtime.Management.ManagementGrain [1954798034 (0x7483D9D2)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Orleans.Runtime.IManagementGrain [-1734666656 (0x989B1660)]
+Grain class Orleans.Runtime.MembershipService.Orleans.Runtime.MembershipService.GrainBasedMembershipTable [-2103923544 (0x8298ACA8)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IMembershipTableGrain [-1256503757 (0xB51B4633)]
+Grain class Orleans.Runtime.ReminderService.Orleans.Runtime.ReminderService.GrainBasedReminderTable [-55315191 (0xFCB3F509)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IReminderTableGrain [-1135060418 (0xBC585A3E)]
+Grain class Orleans.Runtime.Versions.Orleans.Runtime.Versions.VersionStoreGrain [331003096 (0x13BAB4D8)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Versions.Orleans.Runtime.Versions.IVersionStoreGrain [-297600501 (0xEE42FA0B)], Orleans.Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Orleans.Storage.Orleans.Storage.MemoryStorageGrain [819348208 (0x30D642F0)] from OrleansRuntime.dll implementing interfaces: Orleans.Storage.Orleans.Storage.IMemoryStorageGrain [577125491 (0x22663C73)]
+Grain class Orleans.Streams.Orleans.Streams.PubSubRendezvousGrain [1903070868 (0x716E8E94)] from OrleansRuntime.dll implementing interfaces: Orleans.Streams.Orleans.Streams.IPubSubRendezvousGrain [1746702088 (0x681C8F08)]
+	
+[2018-10-02 02:34:15.701 GMT     9	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/2	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/2 on managed thread 9	
+[2018-10-02 02:34:15.700 GMT    15	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/System.9	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/System.9 on managed thread 15	
+[2018-10-02 02:34:15.746 GMT    11	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/4	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/4 on managed thread 11	
+[2018-10-02 02:34:15.701 GMT     7	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/0	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/0 on managed thread 7	
+[2018-10-02 02:34:15.839 GMT    17	INFO   	100000	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAcceptor on managed thread 17	
+[2018-10-02 02:34:15.792 GMT    13	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/6	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/6 on managed thread 13	
+[2018-10-02 02:34:15.893 GMT    18	INFO   	100000	Runtime.Messaging.SiloMessageSender/PingSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/PingSender on managed thread 18	
+[2018-10-02 02:34:16.065 GMT    27	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Application	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Application on managed thread 27	
+[2018-10-02 02:34:15.723 GMT    10	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/3	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/3 on managed thread 10	
+[2018-10-02 02:34:15.768 GMT    12	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/5	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/5 on managed thread 12	
+[2018-10-02 02:34:15.993 GMT    25	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/System	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/System on managed thread 25	
+[2018-10-02 02:34:15.823 GMT    14	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/7	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/7 on managed thread 14	
+[2018-10-02 02:34:16.035 GMT     1	INFO   	100000	Orleans.GrainDirectory.LocalGrainDirectory	127.0.0.1:22222]	Start (SeverityLevel=Info)	
+[2018-10-02 02:34:15.965 GMT    26	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Ping	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Ping on managed thread 26	
+[2018-10-02 02:34:15.938 GMT    19	INFO   	100000	Runtime.Messaging.SiloMessageSender/SystemSender	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/SystemSender on managed thread 19	
+[2018-10-02 02:34:15.723 GMT     8	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/1	127.0.0.1:22222]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/1 on managed thread 8	
+[2018-10-02 02:34:16.296 GMT    24	INFO   	100000	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:22222]	Starting AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer on managed thread 24	
+[2018-10-02 02:34:16.296 GMT    23	INFO   	100000	Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1	127.0.0.1:22222]	Starting AsyncAgent Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1 on managed thread 23	
+[2018-10-02 02:34:16.343 GMT    17	INFO   	100328	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:22222]	Stopping AsyncAgent Runtime.Messaging.IncomingMessageAcceptor that runs on managed thread 17	
+[2018-10-02 02:34:16.350 GMT    24	INFO   	100328	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:22222]	Stopping AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer that runs on managed thread 24	
+[2018-10-02 02:34:16.394 GMT     1	INFO   	100000	ReminderFactory	127.0.0.1:22222]	Creating reminder grain service for type=Orleans.OrleansCodeGenReminderTableGrainReference	
+[2018-10-02 02:34:16.442 GMT     5	INFO   	100000	TypeManager	127.0.0.1:22222]	OnRefreshClusterMapTimer: refresh start	
+[2018-10-02 02:34:16.446 GMT     9	INFO   	100603	MembershipOracle	127.0.0.1:22222]	MembershipOracle starting on host = MSI address = S127.0.0.1:22222:276143651 at 2018-10-02 02:34:15.458 GMT, backOffMax = 00:00:20	
+[2018-10-02 02:34:16.450 GMT    15	INFO   	100507	Catalog	127.0.0.1:22222]	Before collection#1: memory=12MB, #activations=0, collector=<#Activations=0, #Buckets=0, buckets=[]>.	
+[2018-10-02 02:34:16.457 GMT    15	INFO   	100508	Catalog	127.0.0.1:22222]	After collection#1: memory=12MB, #activations=0, collected 0 activations, collector=<#Activations=0, #Buckets=0, buckets=[]>, collection time=00:00:00.0158692.	
+[2018-10-02 02:34:16.461 GMT     9	INFO   	100635	MembershipTableFactory	127.0.0.1:22222]	Creating membership table grain	
+[2018-10-02 02:34:16.553 GMT     8	INFO   	100637	GrainBasedMembershipTable	127.0.0.1:22222]	GrainBasedMembershipTable Activated.	
+[2018-10-02 02:34:16.661 GMT    15	INFO   	100631	MembershipTableFactory	127.0.0.1:22222]	-Connected to membership table provider.	
+[2018-10-02 02:34:16.705 GMT    12	INFO   	100000	GrainBasedMembershipTable	127.0.0.1:22222]	InitializeMembershipTable True.	
+[2018-10-02 02:34:21.143 GMT    15	INFO   	100652	MembershipOracle	127.0.0.1:22222]	-CleanupTable called on silo startup. Membership table 0 silos, 0 are Active, 0 are Dead, Version=<0, 0>. All silos: []	
+[2018-10-02 02:34:21.193 GMT    15	INFO   	100660	MembershipOracle	127.0.0.1:22222]	Starting IAmAliveUpdateTimer.	
+[2018-10-02 02:34:21.215 GMT    15	INFO   	100604	MembershipOracle	127.0.0.1:22222]	-BecomeActive	
+[2018-10-02 02:34:21.225 GMT    15	INFO   	100614	MembershipOracle	127.0.0.1:22222]	About to send pings to 0 nodes in order to validate communication in the Joining state. Pinged nodes = []	
+[2018-10-02 02:34:21.238 GMT     9	INFO   	100634	MembershipOracle	127.0.0.1:22222]	-ReadAll (called from BecomeActive) Membership table 1 silos, 1 are Active, 0 are Dead, Version=<2, 5>. All silos: [SiloAddress=S127.0.0.1:22222:276143651 SiloName=TestSilo Status=Active]	
+[2018-10-02 02:34:21.245 GMT     9	INFO   	100605	MembershipOracle	127.0.0.1:22222]	-Finished BecomeActive.	
+[2018-10-02 02:34:21.249 GMT     1	INFO   	100702	WindowsPerfCountersStatistics	127.0.0.1:22222]	Starting Windows perf counter stats collection with frequency=00:00:30	
+[2018-10-02 02:34:21.268 GMT     1	INFO   	100714	SiloPerformanceMetrics	127.0.0.1:22222]	Starting Silo Table metrics reporter with reportFrequency=00:00:30	
+[2018-10-02 02:34:21.284 GMT    15	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:22222]	Starting DeploymentLoadPublisher.	
+[2018-10-02 02:34:21.324 GMT     9	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:22222]	Started DeploymentLoadPublisher.	
+[2018-10-02 02:34:21.349 GMT     1	INFO   	100000	Watchdog	127.0.0.1:22222]	Starting Silo Watchdog.	
+[2018-10-02 02:34:21.370 GMT    29	INFO   	100000	Runtime.Watchdog	127.0.0.1:22222]	Starting AsyncAgent Runtime.Watchdog on managed thread 29	
+[2018-10-02 02:34:21.434 GMT     8	INFO   	100000	GrainBasedReminderTable_S127.0.0.1:22222:276143651*grn/FCB3F509/00003039@1315ed90	127.0.0.1:22222]	GrainBasedReminderTable *grn/FCB3F509/00003039 Activated. Full identity: [ActivationAddress: S127.0.0.1:22222:276143651*grn/FCB3F509/00003039@1315ed90, Full GrainId: [GrainId: *grn/FCB3F509/0000000000000000000000000000303903fffffffcb3f509-0xBB9ED002, IdCategory: Grain, BaseTypeCode: -55315191 (xFCB3F509), PrimaryKey: 12345 (x3039), UniformHashCode: 3147747330 (0xBB9ED002)], Full ActivationId: @46b65b11cd177cf6addd4f511315ed900000000000000000]	
+[2018-10-02 02:34:21.454 GMT    13	INFO   	102925	Orleans.Runtime.ReminderService.LocalReminderService	127.0.0.1:22222]	Starting Orleans.Runtime.ReminderService.LocalReminderService grain service on: S127.0.0.1:22222:276143651 xE41F07E0, with range 	
+[2018-10-02 02:34:21.504 GMT    21	INFO   	100000	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.GatewayAcceptor on managed thread 21	
+[2018-10-02 02:34:21.509 GMT     1	INFO   	100424	OrleansSiloHost	127.0.0.1:22222]	Silo startup event name: TestSilo	
+[2018-10-02 02:34:21.509 GMT    22	INFO   	100000	Runtime.Messaging.GatewayClientCleanupAgent	127.0.0.1:22222]	Starting AsyncAgent Runtime.Messaging.GatewayClientCleanupAgent on managed thread 22	
+[2018-10-02 02:34:21.533 GMT    21	INFO   	100328	Runtime.Messaging.GatewayAcceptor	127.0.0.1:22222]	Stopping AsyncAgent Runtime.Messaging.GatewayAcceptor that runs on managed thread 21	
+[2018-10-02 02:34:21.580 GMT     1	INFO   	100425	OrleansSiloHost	127.0.0.1:22222]	Created and set startup event TestSilo	
+[2018-10-02 02:34:21.583 GMT     1	INFO   	100402	OrleansSiloHost	127.0.0.1:22222]	Silo TestSilo started successfully	
+[2018-10-02 02:34:21.954 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	Recursively searching for assemblies in C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug...	
+[2018-10-02 02:34:21.959 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.963 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.968 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.973 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.979 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.982 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.986 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.990 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:34:21.993 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:21.998 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2018-10-02 02:34:22.001 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:22.005 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.Compression.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:22.009 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.FileSystem.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:22.013 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:22.017 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	User assembly ignored: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.ValueTuple.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2018-10-02 02:34:22.020 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	Loading assembly C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.dll...	
+[2018-10-02 02:34:22.022 GMT     1	INFO   	100000	AssemblyLoader.Client	127.0.0.1:22222]	1 assemblies loaded.	
+[2018-10-02 02:34:22.026 GMT     1	WARNING	100153	OutsideRuntimeClient	127.0.0.1:22222]	Unable to set unobserved exception handler because it was already set.	
+[2018-10-02 02:34:22.163 GMT     1	INFO   	100313	OutsideRuntimeClient	127.0.0.1:22222]	---------- Initializing OutsideRuntimeClient on MSI at 169.254.105.41 Client Id = *cli/da2174ad ----------	
+[2018-10-02 02:34:22.174 GMT     1	INFO   	100314	OutsideRuntimeClient	127.0.0.1:22222]	---------- Starting OutsideRuntimeClient with runtime Version='1.5.0.0 (Release).' in AppDomain=<AppDomain.Id=1, AppDomain.FriendlyName=TestHost2.exe> Config= 
+ Platform version info:
+   Orleans version: 1.5.0.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe.Config
+   GC Type=Server GCLatencyMode=Batch
+   Host: MSI
+   Processor Count: 8
+Client Configuration:
+   Config File Name: 
+   Start time: 2018-10-02 02:34:22.173 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:40000
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Preferred Address Family: InterNetwork
+   DNS Host Name: MSI
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Client-2018-10-02-02.34.21.587Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: -00:00:00.0010000
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Fallback serializer: 
+   .NET: 
+       .NET thread pool sizes - Min: Worker Threads=200 Completion Port Threads=200
+       .NET thread pool sizes - Max: Worker Threads=32767 Completion Port Threads=1000
+   Providers:
+       No providers configured.
+	
+[2018-10-02 02:34:22.202 GMT     4	INFO   	101309	Messaging.GatewayManager	127.0.0.1:22222]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:40000/0]	
+[2018-10-02 02:34:22.236 GMT     4	INFO   	100908	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Connected to gateway at address gwy.tcp://127.0.0.1:40000/0 on trial 0.	
+[2018-10-02 02:34:22.244 GMT    34	INFO   	100000	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Starting AsyncAgent Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0 on managed thread 34	
+[2018-10-02 02:34:22.258 GMT    33	INFO   	100000	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Starting AsyncAgent Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0 on managed thread 33	
+[2018-10-02 02:34:22.262 GMT    28	INFO   	101301	Orleans.Messaging.Gateway	169.254.105.41:0]	Recorded opened socket from endpoint 127.0.0.1:51625, client ID *cli/da2174ad.	
+[2018-10-02 02:34:22.372 GMT    37	INFO   	100000	Runtime.Messaging.GatewaySender/GatewaySiloSender_0	169.254.105.41:0]	Starting AsyncAgent Runtime.Messaging.GatewaySender/GatewaySiloSender_0 on managed thread 37	
+[2018-10-02 02:34:22.428 GMT    16	INFO   	100929	OutsideRuntimeClient	169.254.105.41:0]	---------- Started OutsideRuntimeClient with Global Client ID: C169.254.105.41:0:-276143662*cli/da2174ad@48d1f687, client GUID ID: *cli/da2174ad	
+[2018-10-02 02:34:23.584 GMT    33	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:34:23.628 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/da2174ad@48d1f687->S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2 #55: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:23.691 GMT    37	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:34:23.703 GMT    34	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2@ee589c9f->*cli/da2174ad@48d1f687 #55: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:23.773 GMT    33	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:34:23.825 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/da2174ad@48d1f687->S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2 #56: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:23.876 GMT    37	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:34:23.887 GMT    34	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2@ee589c9f->*cli/da2174ad@48d1f687 #56: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:23.962 GMT    33	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:34:24.003 GMT    28	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/da2174ad@48d1f687->S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2 #57: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:24.056 GMT    37	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:34:24.065 GMT    34	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2@ee589c9f->*cli/da2174ad@48d1f687 #57: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:24.151 GMT    33	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:34:24.186 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/da2174ad@48d1f687->S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2 #58: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:24.250 GMT    37	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:34:24.261 GMT    34	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2@ee589c9f->*cli/da2174ad@48d1f687 #58: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:24.338 GMT    33	INFO   	101018	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Preparing to send large message Size=1553722 HeaderLength=175 BodyLength=1553539 #ArraySegments=383. Msg=Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:40000/0	
+[2018-10-02 02:34:24.372 GMT    35	INFO   	101019	IncomingMessageBuffer	169.254.105.41:0]	Receiving large message Size=1553714 HeaderLength=175 BodyLength=1553539. Msg=Request *cli/da2174ad@48d1f687->S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2 #60: global::MergeInterface.IMergeSort:Merge()	
+[2018-10-02 02:34:24.425 GMT    37	INFO   	101018	Orleans.Messaging.Gateway	169.254.105.41:0]	Preparing to send large message Size=1553721 HeaderLength=203 BodyLength=1553510 #ArraySegments=383. Msg=Runtime.Messaging.GatewaySender/GatewaySiloSender_0	
+[2018-10-02 02:34:24.437 GMT    34	INFO   	101019	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:40000/0	169.254.105.41:0]	Receiving large message Size=1553713 HeaderLength=203 BodyLength=1553510. Msg=Response S127.0.0.1:40000:0*grn/FA3CED4D/0bfa1db2@ee589c9f->*cli/da2174ad@48d1f687 #60: global::MergeInterface.IMergeSort:Merge()	
