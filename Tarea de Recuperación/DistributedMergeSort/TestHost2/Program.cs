@@ -19,31 +19,31 @@ namespace TestHost2
 
         static void Main(string[] args)
         {
-            // First, configure and start a local silo
+            //CONFIGURACIÓN SILO (cluster) LOCAL 
             var siloConfig = ClusterConfiguration.LocalhostPrimarySilo();
             var silo = new SiloHost("TestSilo", siloConfig);
             silo.InitializeOrleansSilo();
             silo.StartOrleansSilo();
 
-            Console.WriteLine("Silo started.");
+            Console.WriteLine("SILO INICIADO EXITÓSAMENTE.");
 
-            // Then configure and connect a client.
+            //CONFIGURACIÓN CLIENTE
             var clientConfig = ClientConfiguration.LocalhostSilo();
             var client = new ClientBuilder().UseConfiguration(clientConfig).Build();
             client.Connect().Wait();
 
-            Console.WriteLine("Client connected.");
+            Console.WriteLine("CLIENTE CONECTADO EXITÓSAMENTE");
 
-            //Llamada del grano principal.
+            //LLAMADA DEL GRANO (actor) INICIAL, este no se usa para la distribución per se 
             var principal = client.GetGrain<MergeInterface.IMergeSort>(Guid.NewGuid());
-            var resultado = ReadFileYeah(@"C: \Users\Chino Guzman\source\repos\DistributedMergeSort\oraciones.txt").ToList();
+            var resultado = ReadFileYeah(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "oraciones.txt")).ToList();
 
-            //Calculo básico de distribución 
+            //Calculo básico de distribución
             var identificadores = distribucion(1, client, resultado);
 
             //Llamada central de Merge Sort
             var yeah = MergeSort(client, identificadores, identificadores.Count, principal, resultado, 1, resultado.Count);
-            WriteFileYeah(@"C: \Users\Chino Guzman\source\repos\DistributedMergeSort\oraciones.txt", yeah);
+            WriteFileYeah(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "oraciones.txt"), yeah);
 
             Console.WriteLine("\nPress Enter to terminate...");
             Console.ReadLine();

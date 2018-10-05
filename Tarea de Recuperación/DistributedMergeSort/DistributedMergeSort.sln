@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeGrainCollection", "Mer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeInterface", "MergeInterface\MergeInterface.csproj", "{9FAB15E0-8395-427D-81D0-14F2DA673849}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D09CEA6-3A56-46D0-846A-D53A230017E7}"
-	ProjectSection(SolutionItems) = preProject
-		oraciones.txt = oraciones.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHost2", "TestHost2\TestHost2.csproj", "{4D1E35D7-0AE0-49C2-B8A6-CFFF7BB9806C}"
 EndProject
 Global
