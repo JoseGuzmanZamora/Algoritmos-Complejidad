@@ -1,0 +1,6 @@
+Nombre: José Alejandro Guzmán Zamora 
+
+Lenguaje Utilizado: C# con .NET 
+Framework: Microsoft Orleans 
+
+*Las oraciones se deben de colocar en el archivo "oraciones.txt"
