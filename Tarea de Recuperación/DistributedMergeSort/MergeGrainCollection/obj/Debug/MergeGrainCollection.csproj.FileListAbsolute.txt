@@ -10,3 +10,15 @@ C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeGrainCollection\bin
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.dll
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.pdb
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.orleans.g.cs
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\MergeGrainCollection.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\MergeGrainCollection.pdb
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\MergeInterface.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\Orleans.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\MergeInterface.pdb
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\bin\Debug\Orleans.xml
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.csprojAssemblyReference.cache
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.csproj.CoreCompileInputs.cache
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.csproj.CopyComplete
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeGrainCollection\obj\Debug\MergeGrainCollection.orleans.g.cs

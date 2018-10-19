@@ -8,3 +8,13 @@ C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Debug
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.pdb
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.csprojAssemblyReference.cache
 C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.orleans.g.cs
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\bin\Debug\MergeInterface.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\bin\Debug\MergeInterface.pdb
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\bin\Debug\Orleans.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\bin\Debug\Orleans.xml
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.csprojAssemblyReference.cache
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.csproj.CoreCompileInputs.cache
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.csproj.CopyComplete
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.dll
+d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.orleans.g.cs

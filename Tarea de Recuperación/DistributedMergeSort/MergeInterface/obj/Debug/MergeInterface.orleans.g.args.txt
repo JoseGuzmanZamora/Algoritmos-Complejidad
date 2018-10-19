@@ -1,7 +1,7 @@
 /in:obj\Debug\MergeInterface.dll
-/out:C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.orleans.g.cs
+/out:d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\MergeInterface\obj\Debug\MergeInterface.orleans.g.cs
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\Microsoft.CSharp.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll
-/r:C:\Users\Chino Guzman\source\repos\DistributedMergeSort\packages\Microsoft.Orleans.Core.1.5.0\lib\net461\Orleans.dll
+/r:d:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\packages\Microsoft.Orleans.Core.1.5.0\lib\net461\Orleans.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Core.dll
 /r:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll
