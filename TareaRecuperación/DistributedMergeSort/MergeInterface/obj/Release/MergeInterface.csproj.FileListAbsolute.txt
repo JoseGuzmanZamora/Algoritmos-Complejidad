@@ -1,0 +1,20 @@
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\bin\Release\MergeInterface.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\bin\Release\Orleans.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\bin\Release\Orleans.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csprojAssemblyReference.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csproj.CoreCompileInputs.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csproj.CopyComplete
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\bin\Release\MergeInterface.pdb
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.pdb
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.orleans.g.cs
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\bin\Release\MergeInterface.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\bin\Release\MergeInterface.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\bin\Release\Orleans.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\bin\Release\Orleans.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csprojAssemblyReference.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csproj.CoreCompileInputs.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.csproj.CopyComplete
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\MergeInterface\obj\Release\MergeInterface.orleans.g.cs

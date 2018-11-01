@@ -1,0 +1,115 @@
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe.config
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.pdb
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Orleans.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansCounterControl.exe
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansHost.exe
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.Compression.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.IO.FileSystem.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.ValueTuple.dll
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.pdb
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.pdb
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\Orleans.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csprojAssemblyReference.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CoreCompileInputs.cache
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CopyComplete
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.exe
+C:\Users\Chino Guzman\source\repos\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe.config
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Orleans.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCounterControl.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansHost.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.IO.Compression.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.IO.FileSystem.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.ValueTuple.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\Orleans.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csprojAssemblyReference.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CoreCompileInputs.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CopyComplete
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\Tarea de Recuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe.config
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\TestHost2.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Orleans.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCounterControl.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansHost.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.IO.Compression.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.IO.FileSystem.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.ValueTuple.dll
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeGrainCollection.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\MergeInterface.pdb
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.CodeAnalysis.CSharp.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Newtonsoft.Json.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\Orleans.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansCodeGenerator.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansProviders.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\OrleansRuntime.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Collections.Immutable.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\bin\Debug\System.Reflection.Metadata.xml
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csprojAssemblyReference.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CoreCompileInputs.cache
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.csproj.CopyComplete
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.exe
+D:\COMPUTER SCIENCE 2'2\Algoritmia y Complejidad\Algoritmos Git\Algoritmos-Complejidad\TareaRecuperación\DistributedMergeSort\TestHost2\obj\Debug\TestHost2.pdb
